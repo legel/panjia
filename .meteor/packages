@@ -7,3 +7,10 @@ standard-app-packages
 autopublish
 insecure
 coffeescript
+accounts-base
+accounts-facebook
+accounts-github
+accounts-google
+accounts-meetup
+accounts-meteor-developer
+accounts-ui
