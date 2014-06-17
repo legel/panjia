@@ -8,7 +8,7 @@ APP_HOST=crowdcourse.io
 EC2_PEM_FILE=~/.ssh/panjiabackend.pem
 
 # What's your project's Git repo?
-GIT_URL=git://github.com/brianmingus/panjia-mvp-step0.git
+GIT_URL=https://crowdcourse:devfest3d@github.com/brianmingus/panjia-mvp-step0.git
 
 # Does your project use meteorite, or plain meteor?
 METEORITE=true
