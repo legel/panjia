@@ -1,1 +1,1 @@
-Courses = new Meteor.Collection "courses"
+@Courses = new Meteor.Collection "Courses"

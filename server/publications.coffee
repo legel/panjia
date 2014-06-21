@@ -1,1 +1,1 @@
-Meteor.publish "courses", -> Courses.find()
+Meteor.publish "Courses", -> Courses.find()

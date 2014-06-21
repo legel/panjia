@@ -1,1 +1,1 @@
-Meteor.subscribe "courses"
+Meteor.subscribe "Courses"
