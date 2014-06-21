@@ -1,9 +1,10 @@
 <template name="courseItem">
     <div class="course">
-        <div class="course-headings">
-            <h3><a>{{title}}</a></h3>
-            <h4><span> Author: <a>{{author}}</a></span></h4>
-            <p>Description: {{description}}</p>
-        </div>
+      <div class="course-headings">
+	<div class="course-image"><img src="{{image}}"/></div>
+	<div class="course-title">{{title}}</div>
+	<div class="course-question">{{question}}</div>
+	<div class="course-description">{{description}}</div>
+      </div>
     </div>
 </template>
