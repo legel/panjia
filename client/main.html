@@ -3,9 +3,22 @@
 </head>
 
 <body>
-  {{> logo}}
-  {{> courseList}}
+  {{> toolbar}}
+  {{> content}}
 </body>
+
+<template name="toolbar">
+  <div class="toolbar">
+    {{> logo}}
+  </div>
+</template>
+
+<template name="content">
+  <div class="content">
+    <br/>
+    {{> courseList}}
+  </div>
+</template>
 
 <template name="logo">
   <img class="logo" src="images/panjia.png"/>
