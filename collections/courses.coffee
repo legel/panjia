@@ -1,2 +1,2 @@
 @Courses = new Meteor.Collection "Courses"
-@URLs = new Meteor.Collection "URLs"
+@Links = new Meteor.Collection "Links"
