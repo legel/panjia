@@ -1,42 +1,38 @@
-<head>
-  <title>The New Crowdcourse</title>
-</head>
-
 <body>
-  <!-- {{> navbar}} -->
-  <!-- {{> content}} -->
-  <!-- {{> linkstest}} -->
   {{> insertCourseForm}}
 </body>
 
 <template name="insertCourseForm">
-  {{> quickForm collection="Courses" id="insertCourseForm" type="insert"}}
-</template>
-
-<template name="navbar">
-  <div id="navbar">
-    {{> logo}}
-    {{> mycourses}}
-  </div>
-</template>
-
-<template name="logo">
-  <img id="logo" src="images/panjia.png"/>
-</template>
-
-<template name="mycourses">
-  <div id="mycourses">My Courses</div>
-</template>
-
-<template name="linkstest">
-  {{#each Courses}}
-    {{title}}
-  {{/each}}
-</template>
-
-<template name="content">
-  <div id="content">
-    <br/>
-    {{> courseList}}
+  <div style="width: 100%;">
+    <div style="float:left; width: 50%;">
+      {{> quickForm collection="Courses" id="insertCourseForm" type="insert"}}
+    </div>
+    <div style="float: right; width: 50%;">
+      {{#each courses}}
+        <ul>
+          <li>{{title}}</li>
+          <li>{{description}}</li>
+          <li>{{author}}</li>
+          <ul>
+            {{#each links}}
+              <li>{{id}}</li>
+              <li><iframe src="{{url}}"></iframe></li>
+              <li>{{title}}</li>
+              <li>{{description}}</li>
+              <ul>
+                {{#each questions}}
+	          <li>{{title}}</li>
+                  <ul>
+                    {{#each answers}}
+                      <li>{{text}}</li>
+                    {{/each}}
+                  </ul>
+	        {{/each}}
+	      </ul>
+	    {{/each}}
+          </ul>
+        </ul>
+      {{/each}}
+    </div>
   </div>
 </template>

@@ -1,1 +1,1 @@
-Template.courseList.helpers courses: -> Courses.find()
+# Template.courseList.helpers courses: -> Courses.find()
