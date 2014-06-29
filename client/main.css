@@ -1,2 +1,3 @@
-.toolbar {max-height: 3%; width: 100% !important; background-color: black;}
-.logo {max-width: 5%; max-height:5%;padding: 3px;}
+#navbar {min-height: 1%; background-color: #434343 !important;}
+#logo {margin-left: 5%; margin-top: 1%;}
+#content {background-color: #ebebeb;}

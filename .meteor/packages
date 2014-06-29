@@ -15,9 +15,12 @@ accounts-ui
 accounts-password
 accounts-weibo
 accounts-twitter
-appcache
 bootstrap
 email
 jquery
 spiderable
 underscore
+insecure
+autoform
+moment
+collection2

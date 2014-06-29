@@ -3,23 +3,39 @@
 </head>
 
 <body>
-  {{> toolbar}}
-  {{> content}}
+  <!-- {{> navbar}} -->
+  <!-- {{> content}} -->
+  <!-- {{> linkstest}} -->
+  {{> insertCourseForm}}
 </body>
 
-<template name="toolbar">
-  <div class="toolbar">
+<template name="insertCourseForm">
+  {{> quickForm collection="Courses" id="insertCourseForm" type="insert"}}
+</template>
+
+<template name="navbar">
+  <div id="navbar">
     {{> logo}}
   </div>
 </template>
 
+<template name="logo">
+  <img id="logo" src="images/panjia.png"/>
+</template>
+
+<template name="mycourses">
+  <div id="mycourses">My Courses</div>
+</template>
+
+<template name="linkstest">
+  {{#each Courses}}
+    {{title}}
+  {{/each}}
+</template>
+
 <template name="content">
-  <div class="content">
+  <div id="content">
     <br/>
     {{> courseList}}
   </div>
-</template>
-
-<template name="logo">
-  <img class="logo" src="images/panjia.png"/>
 </template>
