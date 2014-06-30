@@ -1,6 +1,70 @@
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <link href='toolbar.css' rel="stylesheet">
+</head>
+
 <body>
-  {{> insertCourseForm}}
+  {{> body}}
 </body>
+
+<template name="body">
+  {{> toolbar}}
+  {{> content}}
+</template>
+
+<template name="content">
+  <div id="content">
+  </div>
+</template>
+
+<template name="toolbar">
+  <div class="toolbar">
+    <div class="col-logo"> <img width="100%" src="images/panjia.png"/></div>
+    {{> mycourses}}
+    {{> questions}}
+    {{> answers}}
+    {{> search}}
+    {{> profilename}}
+    {{> profile}}
+    {{> newcourse}}
+    {{> connect}}
+  </div>
+</template>
+
+<template name="mycourses">
+  <div id="mycourses">Courses</div>
+</template>
+
+<template name="questions">
+  <div id="questions">Questions</div>
+</template>
+
+<template name="answers">
+  <div id="answers">Answers</div>
+</template>
+
+<template name="search">
+  <div id="search"> 
+    <input id="searchBox" type="text" placeholder="What would you like to learn?">
+    <input id="searchButton" type="image" src="images/mglass.png">
+  </div>
+</template>
+
+<template name="profilename">
+  <div id="profilename">Niels</div>
+</template>
+
+<template name="profile">
+  <div id="profile"> <img src="images/niels.png"></div>
+</template>
+
+<template name="newcourse">
+  <div id="icon"> <img src="images/newcourse.png"></div>
+</template>
+
+<template name="connect">
+  <div id="icon"> <img src="images/connect.png"></div>
+</template>
 
 <template name="insertCourseForm">
   <div style="width: 100%;">
@@ -9,29 +73,29 @@
     </div>
     <div style="float: right; width: 50%;">
       {{#each courses}}
+      <ul>
+        <li>{{title}}</li>
+        <li>{{description}}</li>
+        <li>{{author}}</li>
         <ul>
+          {{#each links}}
+          <li>{{id}}</li>
+          <li><iframe src="{{url}}"></iframe></li>
           <li>{{title}}</li>
           <li>{{description}}</li>
-          <li>{{author}}</li>
           <ul>
-            {{#each links}}
-              <li>{{id}}</li>
-              <li><iframe src="{{url}}"></iframe></li>
-              <li>{{title}}</li>
-              <li>{{description}}</li>
-              <ul>
-                {{#each questions}}
-	          <li>{{title}}</li>
-                  <ul>
-                    {{#each answers}}
-                      <li>{{text}}</li>
-                    {{/each}}
-                  </ul>
-	        {{/each}}
-	      </ul>
+            {{#each questions}}
+	    <li>{{title}}</li>
+            <ul>
+              {{#each answers}}
+              <li>{{text}}</li>
+              {{/each}}
+            </ul>
 	    {{/each}}
-          </ul>
+	  </ul>
+	  {{/each}}
         </ul>
+      </ul>
       {{/each}}
     </div>
   </div>

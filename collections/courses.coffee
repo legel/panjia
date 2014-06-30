@@ -1,3 +1,4 @@
+#@Courses = new Meteor.Collection "Courses"
 @Courses = new Meteor.Collection "Courses",
   schema:
     title:
@@ -16,7 +17,7 @@
       type: [Object]
       minCount: 1
     "links.$.id":
-      type: Number
+      type: String
     "links.$.url":
       type: String
     "links.$.title":
