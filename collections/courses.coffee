@@ -24,11 +24,11 @@
       type: String
     "links.$.description":
       type: String
-    "links.$.questions":
+    "links.$.link_questions":
       type: [Object]
-    "links.$.questions.$.title":
+    "links.$.link_questions.$.title":
       type: String
-    "links.$.questions.$.answers":
+    "links.$.link_questions.$.answers":
       type: [Object]
-    "links.$.questions.$.answers.$.text":
+    "links.$.link_questions.$.answers.$.answer":
       type: String
