@@ -3,7 +3,8 @@
   "dependencies": {
     "basePackages": {
       "iron-router": {},
-      "autoform": {}
+      "autoform": {},
+      "easy-search": {}
     },
     "packages": {
       "iron-router": {
@@ -15,6 +16,11 @@
         "git": "https://github.com/aldeed/meteor-autoform.git",
         "tag": "v0.13.5",
         "commit": "27dd5b912eeba687b228a6a7c2c14eef63b12cca"
+      },
+      "easy-search": {
+        "git": "https://github.com/matteodem/meteor-easy-search.git",
+        "tag": "v0.4.55",
+        "commit": "2c2a4d2d9a905530dd6f076b585bafbd0c40e5ca"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

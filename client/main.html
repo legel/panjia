@@ -1,6 +1,5 @@
 <head>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-  <link href='toolbar.css' rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +22,7 @@
     {{> mycourses}}
     {{> questions}}
     {{> answers}}
-    {{> search}}
+    {{> easysearch}}
     {{> profilename}}
     {{> profile}}
     {{> newcourse}}
@@ -64,6 +63,33 @@
 
 <template name="connect">
   <div id="icon"> <img src="images/connect.png"></div>
+</template>
+
+<template name="easysearch">
+  <div class="searchBox">
+    {{> esInput index="courses" placeholder="Search..." }}
+
+    {{#ifEsIsSearching index="courses"}}
+      <div>Loading...</div>
+    {{/ifEsIsSearching}}
+
+    <div class="results-wrapper">
+      {{#esEach index="courses"}}
+      <ul>
+      <li>Course: {{title}}</li>
+      <li>Description: {{description}}</li>
+      </ul>
+      
+      <!-- {{> courseItem}} -->
+      {{/esEach}}
+
+    </div>
+      <!-- {{#ifEsHasNoResults index="courses"}} -->
+      <!-- <div class="no-results">No results found!</div> -->
+      <!-- {{/ifEsHasNoResults}} -->
+
+  </div>
+
 </template>
 
 <template name="insertCourseForm">
