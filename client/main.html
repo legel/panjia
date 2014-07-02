@@ -13,6 +13,36 @@
 
 <template name="content">
   <div id="content">
+     {{> courseList}}
+  </div>
+</template>
+
+<template name="courseList">
+  <div class="courses">
+    {{#each courses}}
+      {{> courseItem}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="courseItem">
+  <div class="course">
+      <img class="course-thumbnail" src={{thumbnail}}>
+      <div class="course-content">
+          <h3>{{title}}</h3>
+          <h4>Main Question?</h4>
+           <!-- need helpers to grab Main Question from course -->
+          <p>{{description}}</p>
+      </div>
+      <div class="author-content">
+        <img src='images/lance.png'>
+        <p class="author-name">{{author}}</p>
+        <div class="course-stats">
+          <p>duration: 30 minutes</p>
+          <p>12 learners</p>
+          <p>2 likes</p>
+        </div>
+      </div>
   </div>
 </template>
 

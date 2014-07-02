@@ -1,5 +1,6 @@
 Meteor.subscribe "Courses"
 Template.insertCourseForm.helpers courses: -> Courses.find()
+Template.courseList.helpers courses: -> Courses.find()
 
 EasySearch.createSearchIndex "courses",
   collection: Courses

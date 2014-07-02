@@ -32,6 +32,7 @@ body {
 }
 
 #questions {
+    height: 16px;
     width: 100px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -45,6 +46,7 @@ body {
 }
 
 #answers {
+    height: 16px;
     width: 100px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -73,9 +75,10 @@ body {
     border-radius: 4px;
     color: black;
     font-size: 14px;
-    margin: 6px;
-    padding: 5px 25px 5px 4px;
-    width: 350px;
+    margin: 4px;
+    padding: 0px 0px 0px 0px;
+    height: 30px;
+    width: 200px;
     margin-left: 80px;
     margin-right: 40px;
 }
@@ -106,4 +109,60 @@ body {
     font-size: 14px;
     float: right;
     margin-right: 20px;
+}
+
+.course {
+    font-family:'Raleway', sans-serif;
+    background-color: #ffffff;
+    height: 120px;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.course > img {
+    float: left;
+    background-color: #434343;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+.course .course-content {
+    margin-left: 20px;
+    width: 65%;
+    float: left
+}
+
+.course .course-content h3 {
+    margin-top: 0px;
+    color: #3097da;
+}
+
+.course .author-content {
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+.course .author-content img {
+    float: left;
+}
+
+.course .author-content .author-name {
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.course .author-content .course-stats {
+    font-size: 12px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.course .author-content .course-stats p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
