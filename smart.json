@@ -7,6 +7,7 @@
       "moment": {},
       "collection2": {},
       "easy-search": {},
-      "reveal-js": {}
+      "reveal-js": {},
+      "browser-detection": {}
   }
 }
