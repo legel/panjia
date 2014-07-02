@@ -100,14 +100,14 @@
     {{> esInput index="courses" placeholder="Search..." }}
 
     {{#ifEsIsSearching index="courses"}}
-      <div>Loading...</div>
+      <div class="search-loading">Loading...</div>
     {{/ifEsIsSearching}}
 
     <div class="results-wrapper">
       {{#esEach index="courses"}}
       <ul>
-      <li>Course: {{title}}</li>
-      <li>Description: {{description}}</li>
+      <li><span>Course : </span> {{title}}</li>
+      <li><span>Description : </span>  {{description}}</li>
       </ul>
       
       <!-- {{> courseItem}} -->
