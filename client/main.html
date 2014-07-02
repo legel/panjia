@@ -13,40 +13,60 @@
 
 <template name="content">
   <div id="content">
-     {{> courseList}}   
-     {{> insertCourseForm}}
+    {{> revealDemo}}
+    <!-- {{> courseList}}    -->
+    <!-- {{> insertCourseForm}} -->
+  </div>
+</template>
+
+<template name="revealDemo">
+  <div class="reveal">
+      <div class="slides">
+        <section>
+	    <iframe src="http://beta.slashdot.org/" width="100%" height="100%"></iframe>
+        </section>
+        <section>
+	    <iframe src="http://fark.com" width="100%" height="100%"></iframe>
+        </section>
+        <section>
+	    <iframe src="http://arstechnica.com" width="100%" height="100%"></iframe>
+        </section>
+        <section>
+	    <iframe src="http://archive.org" width="100%" height="100%"></iframe>
+        </section>
+    </div>
   </div>
 </template>
 
 <template name="courseList">
   <div class="courses">
     {{#each courses}}
-      {{> courseItem}}
+    {{> courseItem}}
     {{/each}}
   </div>
 </template>
 
 <template name="courseItem">
   <div class="course">
-      <img class="course-thumbnail" src={{thumbnail}}>
-      <div class="course-content">
-          <h3>{{title}}</h3>
-          <h4>{{main_question}}</h4>
-          <p>{{description}}</p>
-      </div>
-      <div class="author-content">
-        <img src='images/lance.jpg' style='height:40px'>
-        <p class="author-name">
-          {{author}}
-          <br>
-          <span>30</span> minutes
-          <br>
-          <span>12</span> learners
-          <br>
-          <span>2</span> likes
-        </p>
-        
-      </div>
+    <img class="course-thumbnail" src={{thumbnail}}>
+    <div class="course-content">
+      <h3>{{title}}</h3>
+      <h4>{{main_question}}</h4>
+      <p>{{description}}</p>
+    </div>
+    <div class="author-content">
+      <img src='images/lance.jpg' style='height:40px'>
+      <p class="author-name">
+        {{author}}
+        <br>
+        <span>30</span> minutes
+        <br>
+        <span>12</span> learners
+        <br>
+        <span>2</span> likes
+      </p>
+      
+    </div>
   </div>
 </template>
 
@@ -104,24 +124,24 @@
     {{> esInput index="courses" placeholder="What do you want to learn?" }}
 
     {{#ifEsIsSearching index="courses"}}
-      <div class="search-loading">Loading...</div>
+    <div class="search-loading">Loading...</div>
     {{/ifEsIsSearching}}
 
     <div class="results-wrapper">
       {{#esEach index="courses"}}
       <ul>
-      <li><span>Course : </span> {{title}}</li>
-      <li><span>Description : </span>  {{description}}</li>
-      <li><span>Question : </span>  {{main_question}}</li>
+	<li><span>Course : </span> {{title}}</li>
+	<li><span>Description : </span>  {{description}}</li>
+	<li><span>Question : </span>  {{main_question}}</li>
       </ul>
       
       <!-- {{> courseItem}} -->
       {{/esEach}}
 
     </div>
-      <!-- {{#ifEsHasNoResults index="courses"}} -->
-      <!-- <div class="no-results">No results found!</div> -->
-      <!-- {{/ifEsHasNoResults}} -->
+    <!-- {{#ifEsHasNoResults index="courses"}} -->
+    <!-- <div class="no-results">No results found!</div> -->
+    <!-- {{/ifEsHasNoResults}} -->
 
   </div>
 
@@ -134,7 +154,7 @@
       <div class="col-md-6 welcome">SHARE YOUR KNOWLEDGE</div>
       <div class="col-md-3"></div>
     </div>
-   
+    
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-8">
@@ -156,8 +176,8 @@
         {{/autoForm}}
       </div>
       <div class="col-md-2"></div>
-      </div>
     </div>
+  </div>
 </template>
 
 <template name="showCourse">

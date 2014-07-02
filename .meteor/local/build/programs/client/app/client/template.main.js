@@ -16,7 +16,13 @@ Template.__define__("content", (function() {
   var template = this;
   return HTML.DIV({
     id: "content"
-  }, "\n     ", Spacebars.include(self.lookupTemplate("courseList")), "   \n     ", Spacebars.include(self.lookupTemplate("insertCourseForm")), "\n  ");
+  }, "\n    ", Spacebars.include(self.lookupTemplate("revealDemo")), HTML.Raw("\n    <!-- {{> courseList}}    -->\n    <!-- {{> insertCourseForm}} -->\n  "));
+}));
+
+Template.__define__("revealDemo", (function() {
+  var self = this;
+  var template = this;
+  return HTML.Raw('<div class="reveal">\n      <div class="slides">\n        <section>\n	    <iframe src="http://beta.slashdot.org/" width="100%" height="100%"></iframe>\n        </section>\n        <section>\n	    <iframe src="http://fark.com" width="100%" height="100%"></iframe>\n        </section>\n        <section>\n	    <iframe src="http://arstechnica.com" width="100%" height="100%"></iframe>\n        </section>\n        <section>\n	    <iframe src="http://archive.org" width="100%" height="100%"></iframe>\n        </section>\n    </div>\n  </div>');
 }));
 
 Template.__define__("courseList", (function() {
@@ -28,7 +34,7 @@ Template.__define__("courseList", (function() {
     return Spacebars.call(self.lookup("courses"));
   }, UI.block(function() {
     var self = this;
-    return [ "\n      ", Spacebars.include(self.lookupTemplate("courseItem")), "\n    " ];
+    return [ "\n    ", Spacebars.include(self.lookupTemplate("courseItem")), "\n    " ];
   })), "\n  ");
 }));
 
@@ -37,26 +43,26 @@ Template.__define__("courseItem", (function() {
   var template = this;
   return HTML.DIV({
     "class": "course"
-  }, "\n      ", HTML.IMG({
+  }, "\n    ", HTML.IMG({
     "class": "course-thumbnail",
     src: function() {
       return Spacebars.mustache(self.lookup("thumbnail"));
     }
-  }), "\n      ", HTML.DIV({
+  }), "\n    ", HTML.DIV({
     "class": "course-content"
-  }, "\n          ", HTML.H3(function() {
+  }, "\n      ", HTML.H3(function() {
     return Spacebars.mustache(self.lookup("title"));
-  }), "\n          ", HTML.H4(function() {
+  }), "\n      ", HTML.H4(function() {
     return Spacebars.mustache(self.lookup("main_question"));
-  }), "\n          ", HTML.P(function() {
+  }), "\n      ", HTML.P(function() {
     return Spacebars.mustache(self.lookup("description"));
-  }), "\n      "), "\n      ", HTML.DIV({
+  }), "\n    "), "\n    ", HTML.DIV({
     "class": "author-content"
-  }, HTML.Raw('\n        <img src="images/lance.jpg" style="height:40px">\n        '), HTML.P({
+  }, HTML.Raw('\n      <img src="images/lance.jpg" style="height:40px">\n      '), HTML.P({
     "class": "author-name"
-  }, "\n          ", function() {
+  }, "\n        ", function() {
     return Spacebars.mustache(self.lookup("author"));
-  }, HTML.Raw("\n          <br>\n          <span>30</span> minutes\n          <br>\n          <span>12</span> learners\n          <br>\n          <span>2</span> likes\n        ")), "\n        \n      "), "\n  ");
+  }, HTML.Raw("\n        <br>\n        <span>30</span> minutes\n        <br>\n        <span>12</span> learners\n        <br>\n        <span>2</span> likes\n      ")), "\n      \n    "), "\n  ");
 }));
 
 Template.__define__("toolbar", (function() {
@@ -136,7 +142,7 @@ Template.__define__("easysearch", (function() {
     var self = this;
     return Spacebars.include(self.lookupTemplate("ifEsIsSearching"), UI.block(function() {
       var self = this;
-      return [ "\n      ", HTML.DIV({
+      return [ "\n    ", HTML.DIV({
         "class": "search-loading"
       }, "Loading..."), "\n    " ];
     }));
@@ -150,15 +156,15 @@ Template.__define__("easysearch", (function() {
     var self = this;
     return Spacebars.include(self.lookupTemplate("esEach"), UI.block(function() {
       var self = this;
-      return [ "\n      ", HTML.UL("\n      ", HTML.LI(HTML.SPAN("Course : "), " ", function() {
+      return [ "\n      ", HTML.UL("\n	", HTML.LI(HTML.SPAN("Course : "), " ", function() {
         return Spacebars.mustache(self.lookup("title"));
-      }), "\n      ", HTML.LI(HTML.SPAN("Description : "), "  ", function() {
+      }), "\n	", HTML.LI(HTML.SPAN("Description : "), "  ", function() {
         return Spacebars.mustache(self.lookup("description"));
-      }), "\n      ", HTML.LI(HTML.SPAN("Question : "), "  ", function() {
+      }), "\n	", HTML.LI(HTML.SPAN("Question : "), "  ", function() {
         return Spacebars.mustache(self.lookup("main_question"));
       }), "\n      "), "\n      \n      ", HTML.Comment(" {{> courseItem}} "), "\n      " ];
     }));
-  })), "\n\n    "), HTML.Raw('\n      <!-- {{#ifEsHasNoResults index="courses"}} -->\n      <!-- <div class="no-results">No results found!</div> -->\n      <!-- {{/ifEsHasNoResults}} -->\n\n  '));
+  })), "\n\n    "), HTML.Raw('\n    <!-- {{#ifEsHasNoResults index="courses"}} -->\n    <!-- <div class="no-results">No results found!</div> -->\n    <!-- {{/ifEsHasNoResults}} -->\n\n  '));
 }));
 
 Template.__define__("insertCourseForm", (function() {
@@ -166,7 +172,7 @@ Template.__define__("insertCourseForm", (function() {
   var template = this;
   return HTML.DIV({
     "class": "container"
-  }, HTML.Raw(' \n    <div class="row">\n      <div class="col-md-3"></div>\n      <div class="col-md-6 welcome">SHARE YOUR KNOWLEDGE</div>\n      <div class="col-md-3"></div>\n    </div>\n   \n    '), HTML.DIV({
+  }, HTML.Raw(' \n    <div class="row">\n      <div class="col-md-3"></div>\n      <div class="col-md-6 welcome">SHARE YOUR KNOWLEDGE</div>\n      <div class="col-md-3"></div>\n    </div>\n    \n    '), HTML.DIV({
     "class": "row"
   }, HTML.Raw('\n      <div class="col-md-2"></div>\n      '), HTML.DIV({
     "class": "col-md-8"
@@ -246,7 +252,7 @@ Template.__define__("insertCourseForm", (function() {
         }) ];
       })), "\n        "), "\n\n\n\n        " ];
     }));
-  })), "\n      "), HTML.Raw('\n      <div class="col-md-2"></div>\n      ')), "\n    ");
+  })), "\n      "), HTML.Raw('\n      <div class="col-md-2"></div>\n    ')), "\n  ");
 }));
 
 Template.__define__("showCourse", (function() {

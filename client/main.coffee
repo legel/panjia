@@ -1,4 +1,8 @@
+Meteor.startup ->
+        Reveal.initialize()
+
 Meteor.subscribe "Courses"
+
 Template.insertCourseForm.helpers courses: -> Courses.find()
 Template.courseList.helpers courses: -> Courses.find()
 

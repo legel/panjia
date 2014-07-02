@@ -1,4 +1,8 @@
 (function(){__coffeescriptShare = typeof __coffeescriptShare === 'object' ? __coffeescriptShare : {}; var share = __coffeescriptShare;
+Meteor.startup(function() {
+  return Reveal.initialize();
+});
+
 Meteor.subscribe("Courses");
 
 Template.insertCourseForm.helpers({
@@ -21,4 +25,4 @@ EasySearch.createSearchIndex("courses", {
 
 })();
 
-//# sourceMappingURL=9a34918e14d60ce87f8ee696e311fb83e5fe4523.map
+//# sourceMappingURL=6d8ba33d4925c8b358bf139c3a82fc3c78dd37af.map
