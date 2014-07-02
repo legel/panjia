@@ -13,7 +13,8 @@
 
 <template name="content">
   <div id="content">
-     {{> courseList}}
+     {{> courseList}}   
+     {{> insertCourseForm}}
   </div>
 </template>
 
@@ -35,13 +36,10 @@
           <p>{{description}}</p>
       </div>
       <div class="author-content">
-        <img src='images/lance.png'>
-        <p class="author-name">{{author}}</p>
-        <div class="course-stats">
-          <p>duration: 30 minutes</p>
-          <p>12 learners</p>
-          <p>2 likes</p>
-        </div>
+        <img src='images/lance.jpg' style='height:40px'>
+        <p class="author-name">{{author}}
+        <br>30 minutes, 12 learners, 2 likes</p>
+        
       </div>
   </div>
 </template>
@@ -97,7 +95,7 @@
 
 <template name="easysearch">
   <div class="searchBox">
-    {{> esInput index="courses" placeholder="Search..." }}
+    {{> esInput index="courses" placeholder="What do you want to learn?" }}
 
     {{#ifEsIsSearching index="courses"}}
       <div class="search-loading">Loading...</div>
@@ -122,11 +120,42 @@
 
 </template>
 
+
 <template name="insertCourseForm">
-  <div style="width: 100%;">
-    <div style="float:left; width: 50%;">
-      {{> quickForm collection="Courses" id="insertCourseForm" type="insert"}}
+  <div class="container"> 
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 welcome">SHARE YOUR KNOWLEDGE</div>
+      <div class="col-md-3"></div>
     </div>
+   
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+
+        {{#autoForm collection="Courses" doc=selectedDoc id="docForm" type=docFormType template="bootstrap3"}}
+
+	<div class="form-group {{#if afFieldIsInvalid name='title'}}has-error{{/if}}">
+          {{> afFieldInput name='title' style="height: 40px; resize: none; width: 100%; font-family:'Raleway'" placeholder="Title"}}
+          {{#if afFieldIsInvalid name='title'}} <span class="help-block">{{{afFieldMessage name='title'}}}</span>{{/if}}
+        </div>
+
+	<div class="form-group {{#if afFieldIsInvalid name='description'}}has-error{{/if}}">
+          {{> afFieldInput name='description' style="height: 80px; resize: none; width: 100%; font-family:'Raleway'" placeholder="Description"}}
+          {{#if afFieldIsInvalid name='description'}} <span class="help-block">{{{afFieldMessage name='description'}}}</span>{{/if}}
+        </div>
+
+
+
+        {{/autoForm}}
+      </div>
+      <div class="col-md-2"></div>
+      </div>
+    </div>
+</template>
+
+<template name="showCourse">
+  <div style="width: 100%;">
     <div style="float: right; width: 50%;">
       {{#each courses}}
       <ul>

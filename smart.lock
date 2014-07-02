@@ -4,7 +4,8 @@
     "basePackages": {
       "iron-router": {},
       "autoform": {},
-      "easy-search": {}
+      "easy-search": {},
+      "bootstrap-3": {}
     },
     "packages": {
       "iron-router": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/matteodem/meteor-easy-search.git",
         "tag": "v0.4.55",
         "commit": "2c2a4d2d9a905530dd6f076b585bafbd0c40e5ca"
+      },
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v3.2.0-1",
+        "commit": "17a63902fc6cf1096c5289d963c66cf28b474727"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

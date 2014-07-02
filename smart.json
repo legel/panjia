@@ -2,6 +2,7 @@
   "packages": {
     "iron-router": {},
     "autoform": {},
-    "easy-search": {}
+    "easy-search": {},
+    "bootstrap-3": {}
   }
 }
