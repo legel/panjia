@@ -1,0 +1,46 @@
+{
+  "format": "unipackage-slice-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "simple-schema"
+    },
+    {
+      "package": "underscore"
+    },
+    {
+      "package": "deps"
+    },
+    {
+      "package": "check"
+    },
+    {
+      "package": "mongo-livedata"
+    },
+    {
+      "package": "ejson"
+    },
+    {
+      "package": "insecure",
+      "weak": true
+    }
+  ],
+  "implies": [
+    {
+      "package": "simple-schema"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "browser/packages/collection2.js",
+      "length": 63374,
+      "offset": 0,
+      "servePath": "/packages/collection2.js",
+      "sourceMap": "browser/packages/collection2.js.map"
+    }
+  ]
+}

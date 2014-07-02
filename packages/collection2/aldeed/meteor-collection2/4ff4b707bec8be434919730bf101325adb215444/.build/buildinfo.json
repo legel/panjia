@@ -1,0 +1,58 @@
+{
+  "builtBy": "meteor/10",
+  "sliceDependencies": {
+    "browser.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/collection2/package.js": "611368ad3ba14a733af9c1277fb0296916da8622",
+        "/home/mingus/Projects/crowdcourse/packages/collection2/collection2.js": "890e6f16a541db6f797bdb22f21f4b40299735fd",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/package.js": "208abe7eaa6691f44fc43cf47a4ea9c0233bd20e"
+      },
+      "directories": []
+    },
+    "os.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/collection2/package.js": "611368ad3ba14a733af9c1277fb0296916da8622",
+        "/home/mingus/Projects/crowdcourse/packages/collection2/collection2.js": "890e6f16a541db6f797bdb22f21f4b40299735fd",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/package.js": "208abe7eaa6691f44fc43cf47a4ea9c0233bd20e"
+      },
+      "directories": []
+    },
+    "tests.browser.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/collection2/package.js": "611368ad3ba14a733af9c1277fb0296916da8622",
+        "/home/mingus/Projects/crowdcourse/packages/collection2/collection2.tests.js": "e4974df9db996cc89af0c572e9716d5285796c65",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/package.js": "208abe7eaa6691f44fc43cf47a4ea9c0233bd20e"
+      },
+      "directories": []
+    },
+    "tests.os.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/collection2/package.js": "611368ad3ba14a733af9c1277fb0296916da8622",
+        "/home/mingus/Projects/crowdcourse/packages/collection2/collection2.tests.js": "e4974df9db996cc89af0c572e9716d5285796c65",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/package.js": "208abe7eaa6691f44fc43cf47a4ea9c0233bd20e"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/mingus/Projects/crowdcourse/packages/collection2/package.js": "611368ad3ba14a733af9c1277fb0296916da8622"
+    },
+    "directories": []
+  },
+  "pluginProviderPackages": {
+    "collection2": "/home/mingus/Projects/crowdcourse/packages/collection2",
+    "meteor": "/home/mingus/.meteor/packages/meteor/700301472e",
+    "simple-schema": "/home/mingus/Projects/crowdcourse/packages/simple-schema",
+    "underscore": "/home/mingus/.meteor/packages/underscore/381c001cdc",
+    "deps": "/home/mingus/.meteor/packages/deps/a8f3a2d8a8",
+    "check": "/home/mingus/.meteor/packages/check/a93454cad0",
+    "mongo-livedata": "/home/mingus/.meteor/packages/mongo-livedata/ef6d60287e",
+    "ejson": "/home/mingus/.meteor/packages/ejson/ba1f4cb13f",
+    "tinytest": "/home/mingus/.meteor/packages/tinytest/028b5947c4",
+    "ordered-dict": "/home/mingus/.meteor/packages/ordered-dict/a672da867b",
+    "random": "/home/mingus/.meteor/packages/random/51ee2fa11e",
+    "test-helpers": "/home/mingus/.meteor/packages/test-helpers/41b991fcdf"
+  },
+  "source": "/home/mingus/Projects/crowdcourse/packages/collection2"
+}

@@ -1,0 +1,48 @@
+{
+  "builtBy": "meteor/10",
+  "sliceDependencies": {
+    "browser.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/package.js": "ca634ceb504401adbf4cd4d88186cbb051dcf41f",
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/bootstrap-3/css/bootstrap.css": "b3e8e99a31e0a9a717d1edc53f007a476164e9fd",
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/bootstrap-3/js/bootstrap.js": "8c639912ccd43078865578e598607d1b847c2373",
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.eot": "f3a9a3b609133c3d21d6b42abbf7f43bd111df72",
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.ttf": "aafafdc09404c4aa4447d7e898a2183def9cc1b1",
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.svg": "3ef91859cbec165ac97df6957b176f69e8d6a04d",
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.woff": "22037a3455914e5662fa51a596677bdb329e2c5c",
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/bootstrap-override.css": "8e259eec4e3f66dd1b61a1833aeb561b5d94af65"
+      },
+      "directories": []
+    },
+    "os.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/package.js": "ca634ceb504401adbf4cd4d88186cbb051dcf41f"
+      },
+      "directories": []
+    },
+    "tests.browser.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/package.js": "ca634ceb504401adbf4cd4d88186cbb051dcf41f"
+      },
+      "directories": []
+    },
+    "tests.os.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/package.js": "ca634ceb504401adbf4cd4d88186cbb051dcf41f"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/mingus/Projects/crowdcourse/packages/bootstrap-3/package.js": "ca634ceb504401adbf4cd4d88186cbb051dcf41f"
+    },
+    "directories": []
+  },
+  "pluginProviderPackages": {
+    "bootstrap-3": "/home/mingus/Projects/crowdcourse/packages/bootstrap-3",
+    "meteor": "/home/mingus/.meteor/packages/meteor/700301472e",
+    "jquery": "/home/mingus/.meteor/packages/jquery/2ff5a27117"
+  },
+  "source": "/home/mingus/Projects/crowdcourse/packages/bootstrap-3"
+}

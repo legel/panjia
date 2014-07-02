@@ -1,0 +1,58 @@
+{
+  "builtBy": "meteor/10",
+  "sliceDependencies": {
+    "browser.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/package.js": "208abe7eaa6691f44fc43cf47a4ea9c0233bd20e",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/string.js": "acdc7c1c59eb47527bbde4028d98a4f38d247e99",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/mongo-object.js": "7a2334d33b53034abca349d3ddd346fdb2d189a1",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/simple-schema.js": "5e2f4b5e0bb94e297520a68927696650426ef975",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/simple-schema-context.js": "2fddcd8903f788b09b9ff75c17cb1583ded41c76"
+      },
+      "directories": []
+    },
+    "os.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/package.js": "208abe7eaa6691f44fc43cf47a4ea9c0233bd20e",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/.npm/package/npm-shrinkwrap.json": "17dcaa080d5a3ccac2541eb876ae06fbca5e400c",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/mongo-object.js": "7a2334d33b53034abca349d3ddd346fdb2d189a1",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/simple-schema.js": "5e2f4b5e0bb94e297520a68927696650426ef975",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/simple-schema-context.js": "2fddcd8903f788b09b9ff75c17cb1583ded41c76"
+      },
+      "directories": []
+    },
+    "tests.browser.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/package.js": "208abe7eaa6691f44fc43cf47a4ea9c0233bd20e",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/simple-schema-tests.js": "6c915e7cb84dbc48aa59ad5e28b6122a0db5aeac",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/mongo-object-tests.js": "18d35559fa8d29e26e573f28a941f7ff39e8b690"
+      },
+      "directories": []
+    },
+    "tests.os.json": {
+      "files": {
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/package.js": "208abe7eaa6691f44fc43cf47a4ea9c0233bd20e",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/.npm/package/npm-shrinkwrap.json": "17dcaa080d5a3ccac2541eb876ae06fbca5e400c",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/simple-schema-tests.js": "6c915e7cb84dbc48aa59ad5e28b6122a0db5aeac",
+        "/home/mingus/Projects/crowdcourse/packages/simple-schema/mongo-object-tests.js": "18d35559fa8d29e26e573f28a941f7ff39e8b690"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/mingus/Projects/crowdcourse/packages/simple-schema/package.js": "208abe7eaa6691f44fc43cf47a4ea9c0233bd20e"
+    },
+    "directories": []
+  },
+  "pluginProviderPackages": {
+    "simple-schema": "/home/mingus/Projects/crowdcourse/packages/simple-schema",
+    "meteor": "/home/mingus/.meteor/packages/meteor/700301472e",
+    "deps": "/home/mingus/.meteor/packages/deps/a8f3a2d8a8",
+    "underscore": "/home/mingus/.meteor/packages/underscore/381c001cdc",
+    "check": "/home/mingus/.meteor/packages/check/a93454cad0",
+    "test-helpers": "/home/mingus/.meteor/packages/test-helpers/41b991fcdf",
+    "tinytest": "/home/mingus/.meteor/packages/tinytest/028b5947c4"
+  },
+  "source": "/home/mingus/Projects/crowdcourse/packages/simple-schema"
+}

@@ -1,0 +1,36 @@
+{
+  "format": "unipackage-slice-pre1",
+  "noExports": true,
+  "packageVariables": [
+    {
+      "name": "Address"
+    },
+    {
+      "name": "ssrCon"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "simple-schema"
+    },
+    {
+      "package": "test-helpers"
+    },
+    {
+      "package": "tinytest"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "tests.browser/packages/simple-schematests.js",
+      "length": 502296,
+      "offset": 0,
+      "servePath": "/packages/simple-schema:tests.js",
+      "sourceMap": "tests.browser/packages/simple-schematests.js.map"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "format": "unipackage-slice-pre1",
+  "packageVariables": [
+    {
+      "name": "SimpleSchema",
+      "export": true
+    },
+    {
+      "name": "SchemaRegEx",
+      "export": true
+    },
+    {
+      "name": "MongoObject",
+      "export": true
+    },
+    {
+      "name": "S"
+    },
+    {
+      "name": "looksLikeModifier"
+    },
+    {
+      "name": "SimpleSchemaValidationContext"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "deps"
+    },
+    {
+      "package": "underscore"
+    },
+    {
+      "package": "check"
+    }
+  ],
+  "node_modules": "npm/node_modules",
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/simple-schema.js",
+      "length": 302368,
+      "offset": 0,
+      "servePath": "/packages/simple-schema.js",
+      "sourceMap": "os/packages/simple-schema.js.map"
+    }
+  ]
+}

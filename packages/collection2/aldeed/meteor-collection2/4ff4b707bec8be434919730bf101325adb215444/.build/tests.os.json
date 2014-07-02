@@ -1,0 +1,57 @@
+{
+  "format": "unipackage-slice-pre1",
+  "noExports": true,
+  "packageVariables": [
+    {
+      "name": "Document"
+    },
+    {
+      "name": "BlackBox"
+    },
+    {
+      "name": "defaultValues"
+    },
+    {
+      "name": "contextCheck"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "collection2"
+    },
+    {
+      "package": "tinytest"
+    },
+    {
+      "package": "underscore"
+    },
+    {
+      "package": "ejson"
+    },
+    {
+      "package": "ordered-dict"
+    },
+    {
+      "package": "random"
+    },
+    {
+      "package": "deps"
+    },
+    {
+      "package": "test-helpers"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "tests.os/packages/collection2tests.js",
+      "length": 129487,
+      "offset": 0,
+      "servePath": "/packages/collection2:tests.js",
+      "sourceMap": "tests.os/packages/collection2tests.js.map"
+    }
+  ]
+}

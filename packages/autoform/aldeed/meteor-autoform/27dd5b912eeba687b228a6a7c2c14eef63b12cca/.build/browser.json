@@ -1,0 +1,123 @@
+{
+  "format": "unipackage-slice-pre1",
+  "packageVariables": [
+    {
+      "name": "AutoForm",
+      "export": true
+    },
+    {
+      "name": "Utility",
+      "export": "tests"
+    },
+    {
+      "name": "FormPreserve"
+    },
+    {
+      "name": "res"
+    },
+    {
+      "name": "Hooks"
+    },
+    {
+      "name": "defaultInputValueHandlers"
+    },
+    {
+      "name": "customInputValueHandlers"
+    },
+    {
+      "name": "FormData"
+    },
+    {
+      "name": "ArrayTracker"
+    },
+    {
+      "name": "autoFormChildKeys"
+    },
+    {
+      "name": "defaultFormId"
+    },
+    {
+      "name": "formPreserve"
+    },
+    {
+      "name": "formData"
+    },
+    {
+      "name": "arrayTracker"
+    },
+    {
+      "name": "getFieldValue"
+    },
+    {
+      "name": "getFormValues"
+    },
+    {
+      "name": "validateField"
+    },
+    {
+      "name": "updateTrackedFieldValue"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "simple-schema"
+    },
+    {
+      "package": "check"
+    },
+    {
+      "package": "livedata"
+    },
+    {
+      "package": "underscore"
+    },
+    {
+      "package": "deps"
+    },
+    {
+      "package": "templating"
+    },
+    {
+      "package": "handlebars"
+    },
+    {
+      "package": "moment"
+    },
+    {
+      "package": "ui"
+    },
+    {
+      "package": "collection2",
+      "weak": true
+    },
+    {
+      "package": "reload",
+      "weak": true
+    }
+  ],
+  "implies": [
+    {
+      "package": "simple-schema"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "browser/packages/autoform/templates/bootstrap3-horizontal/bootstrap3-horizontal.css",
+      "length": 89,
+      "offset": 0,
+      "servePath": "/packages/autoform/templates/bootstrap3-horizontal/bootstrap3-horizontal.css"
+    },
+    {
+      "type": "prelink",
+      "file": "browser/packages/autoform.js",
+      "length": 582877,
+      "offset": 0,
+      "servePath": "/packages/autoform.js",
+      "sourceMap": "browser/packages/autoform.js.map"
+    }
+  ]
+}

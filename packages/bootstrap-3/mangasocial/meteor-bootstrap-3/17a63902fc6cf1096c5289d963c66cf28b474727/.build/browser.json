@@ -1,0 +1,68 @@
+{
+  "format": "unipackage-slice-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "jquery"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "browser/packages/bootstrap-3/bootstrap-3/css/bootstrap.css",
+      "length": 132546,
+      "offset": 0,
+      "servePath": "/packages/bootstrap-3/bootstrap-3/css/bootstrap.css"
+    },
+    {
+      "type": "asset",
+      "file": "browser/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.eot",
+      "length": 20335,
+      "offset": 0,
+      "servePath": "/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.eot",
+      "path": "bootstrap-3/fonts/glyphicons-halflings-regular.eot"
+    },
+    {
+      "type": "asset",
+      "file": "browser/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.ttf",
+      "length": 41280,
+      "offset": 0,
+      "servePath": "/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.ttf",
+      "path": "bootstrap-3/fonts/glyphicons-halflings-regular.ttf"
+    },
+    {
+      "type": "asset",
+      "file": "browser/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.svg",
+      "length": 62927,
+      "offset": 0,
+      "servePath": "/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.svg",
+      "path": "bootstrap-3/fonts/glyphicons-halflings-regular.svg"
+    },
+    {
+      "type": "asset",
+      "file": "browser/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.woff",
+      "length": 23320,
+      "offset": 0,
+      "servePath": "/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.woff",
+      "path": "bootstrap-3/fonts/glyphicons-halflings-regular.woff"
+    },
+    {
+      "type": "css",
+      "file": "browser/packages/bootstrap-3/bootstrap-override.css",
+      "length": 586,
+      "offset": 0,
+      "servePath": "/packages/bootstrap-3/bootstrap-override.css"
+    },
+    {
+      "type": "prelink",
+      "file": "browser/packages/bootstrap-3.js",
+      "length": 268435,
+      "offset": 0,
+      "servePath": "/packages/bootstrap-3.js",
+      "sourceMap": "browser/packages/bootstrap-3.js.map"
+    }
+  ]
+}
