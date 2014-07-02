@@ -13,6 +13,10 @@
       type: String
       label: "Author Name"
       max: 100
+    thumbnail:
+      type: String
+      label: "Thumb Url"
+      max: 200
     links:
       type: [Object]
       minCount: 1
