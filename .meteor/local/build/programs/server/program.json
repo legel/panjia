@@ -332,8 +332,40 @@
       "sourceMapRoot": "packages"
     },
     {
+      "path": "packages/simple-schema.js",
+      "node_modules": "npm/simple-schema/main/node_modules",
+      "sourceMap": "packages/simple-schema.js.map",
+      "sourceMapRoot": "packages"
+    },
+    {
+      "path": "packages/autoform.js",
+      "sourceMap": "packages/autoform.js.map",
+      "sourceMapRoot": "packages"
+    },
+    {
+      "path": "packages/moment.js",
+      "sourceMap": "packages/moment.js.map",
+      "sourceMapRoot": "packages"
+    },
+    {
+      "path": "packages/collection2.js",
+      "sourceMap": "packages/collection2.js.map",
+      "sourceMapRoot": "packages"
+    },
+    {
       "path": "packages/session.js",
       "sourceMap": "packages/session.js.map",
+      "sourceMapRoot": "packages"
+    },
+    {
+      "path": "packages/easy-search.js",
+      "node_modules": "npm/easy-search/main/node_modules",
+      "sourceMap": "packages/easy-search.js.map",
+      "sourceMapRoot": "packages"
+    },
+    {
+      "path": "packages/bootstrap-3.js",
+      "sourceMap": "packages/bootstrap-3.js.map",
       "sourceMapRoot": "packages"
     },
     {

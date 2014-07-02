@@ -1,8 +1,11 @@
 {
   "packages": {
-    "iron-router": {},
-    "autoform": {},
-    "easy-search": {},
-    "bootstrap-3": {}
+      "iron-router": {},
+      "autoform": {},
+      "easy-search": {},
+      "bootstrap-3": {},
+      "moment": {},
+      "collection2": {},
+      "easy-search": {}
   }
 }

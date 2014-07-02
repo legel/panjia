@@ -662,6 +662,61 @@
       "hash": "02aa0a61f171d872d322eac028ccc1d17e6bdb7f"
     },
     {
+      "path": "packages/simple-schema.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/simple-schema.js?19afe70e5c00d8565c4ef47f1edc175d585afd5d",
+      "sourceMap": "packages/simple-schema.js.map",
+      "sourceMapUrl": "/packages/19afe70e5c00d8565c4ef47f1edc175d585afd5d.map",
+      "size": 422225,
+      "hash": "e60c664f28ce90033e8ccaf3f83d8961686ca7c2"
+    },
+    {
+      "path": "packages/handlebars.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/handlebars.js?038145b6256cd6a69c11650ed6bf12b093920095",
+      "sourceMap": "packages/handlebars.js.map",
+      "sourceMapUrl": "/packages/038145b6256cd6a69c11650ed6bf12b093920095.map",
+      "size": 1359,
+      "hash": "9d865e1a5c26b3aee1ace6557d6183825126478d"
+    },
+    {
+      "path": "packages/moment.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/moment.js?b4bcca636b39d70cd42308e886f56486a1f78756",
+      "sourceMap": "packages/moment.js.map",
+      "sourceMapUrl": "/packages/b4bcca636b39d70cd42308e886f56486a1f78756.map",
+      "size": 319188,
+      "hash": "82f6b25d46d4c8e9f8833d79ae625596c78fef24"
+    },
+    {
+      "path": "packages/collection2.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/collection2.js?667798f5814affb91b887c7c7b708d91e0862fe8",
+      "sourceMap": "packages/collection2.js.map",
+      "sourceMapUrl": "/packages/667798f5814affb91b887c7c7b708d91e0862fe8.map",
+      "size": 65063,
+      "hash": "e129f2c7bbc8377a7cac8d3c6bbf4fc3906cd083"
+    },
+    {
+      "path": "packages/autoform.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/autoform.js?82f0d63b1a0f82bae54f2dfd79f10ceb31d378c3",
+      "sourceMap": "packages/autoform.js.map",
+      "sourceMapUrl": "/packages/82f0d63b1a0f82bae54f2dfd79f10ceb31d378c3.map",
+      "size": 585079,
+      "hash": "498baa676b9bc2db007efc5e3bf1fc3b5970a371"
+    },
+    {
       "path": "packages/webapp.js",
       "where": "client",
       "type": "js",
@@ -695,22 +750,44 @@
       "hash": "44f9ac2976f6353e5ba4ba28b2d1d37c2e2910e3"
     },
     {
+      "path": "packages/easy-search.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/easy-search.js?9067c4b8e7be966158f559cb37310d49765a639d",
+      "sourceMap": "packages/easy-search.js.map",
+      "sourceMapUrl": "/packages/9067c4b8e7be966158f559cb37310d49765a639d.map",
+      "size": 38218,
+      "hash": "d9db0fa240890b17ca53839c61cfed33b2f2fde4"
+    },
+    {
+      "path": "packages/bootstrap-3.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/bootstrap-3.js?714b8594ea6555f1727061814ffeae31f5e4c7fb",
+      "sourceMap": "packages/bootstrap-3.js.map",
+      "sourceMapUrl": "/packages/714b8594ea6555f1727061814ffeae31f5e4c7fb.map",
+      "size": 269860,
+      "hash": "2e113a4ded97c3754681caafec2a61c08fe8940c"
+    },
+    {
       "path": "packages/global-imports.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/packages/global-imports.js?ad528f25ca27e4de1280baf6cc7cabc385489fe8",
-      "size": 633,
-      "hash": "ad528f25ca27e4de1280baf6cc7cabc385489fe8"
+      "url": "/packages/global-imports.js?a47398b214287498ee916109ad5781f3e562c223",
+      "size": 909,
+      "hash": "a47398b214287498ee916109ad5781f3e562c223"
     },
     {
       "path": "app/client/template.main.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/template.main.js?4a88ce1168455cadaa0209d3f6609deb3b31fc8b",
-      "size": 11866,
-      "hash": "4a88ce1168455cadaa0209d3f6609deb3b31fc8b"
+      "url": "/client/template.main.js?6e66ed15c3d6cd00ec5984462824f5f7d8563266",
+      "size": 12103,
+      "hash": "6e66ed15c3d6cd00ec5984462824f5f7d8563266"
     },
     {
       "path": "app/collections/courses.coffee.js",
@@ -735,15 +812,15 @@
       "hash": "d9f3f3b1a2aa06c7b68f4faa93b0390140979c9d"
     },
     {
-      "path": "f7c721b551efa86a53e7ee3ffac384581f255738.css",
+      "path": "f825558be255235694600f4977d73fdd88c2b219.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/f7c721b551efa86a53e7ee3ffac384581f255738.css",
-      "sourceMap": "f7c721b551efa86a53e7ee3ffac384581f255738.css.map",
-      "sourceMapUrl": "/f7c721b551efa86a53e7ee3ffac384581f255738.map",
-      "size": 170452,
-      "hash": "aa5ffa1139949eb101c1d5398c4799020503cd35"
+      "url": "/f825558be255235694600f4977d73fdd88c2b219.css",
+      "sourceMap": "f825558be255235694600f4977d73fdd88c2b219.css.map",
+      "sourceMapUrl": "/f825558be255235694600f4977d73fdd88c2b219.map",
+      "size": 304565,
+      "hash": "2695032ca3ab77f81505c88d1fd3bdb2f264180b"
     },
     {
       "path": "packages/bootstrap/img/glyphicons-halflings.png",
@@ -762,6 +839,42 @@
       "url": "/packages/bootstrap/img/glyphicons-halflings-white.png",
       "size": 8777,
       "hash": "a25c4705320fd63c33790e666872910e702b9bf6"
+    },
+    {
+      "path": "packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.eot",
+      "size": 20335,
+      "hash": "f3a9a3b609133c3d21d6b42abbf7f43bd111df72"
+    },
+    {
+      "path": "packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.ttf",
+      "size": 41280,
+      "hash": "aafafdc09404c4aa4447d7e898a2183def9cc1b1"
+    },
+    {
+      "path": "packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.svg",
+      "size": 62927,
+      "hash": "3ef91859cbec165ac97df6957b176f69e8d6a04d"
+    },
+    {
+      "path": "packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.woff",
+      "size": 23320,
+      "hash": "22037a3455914e5662fa51a596677bdb329e2c5c"
     },
     {
       "path": "app/w2ui-1.3.2.min.css",

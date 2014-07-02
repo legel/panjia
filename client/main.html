@@ -31,8 +31,7 @@
       <img class="course-thumbnail" src={{thumbnail}}>
       <div class="course-content">
           <h3>{{title}}</h3>
-          <h4>Main Question?</h4>
-           <!-- need helpers to grab Main Question from course -->
+          <h4>{{main_question}}</h4>
           <p>{{description}}</p>
       </div>
       <div class="author-content">
@@ -113,6 +112,7 @@
       <ul>
       <li><span>Course : </span> {{title}}</li>
       <li><span>Description : </span>  {{description}}</li>
+      <li><span>Question : </span>  {{main_question}}</li>
       </ul>
       
       <!-- {{> courseItem}} -->
@@ -126,7 +126,6 @@
   </div>
 
 </template>
-
 
 <template name="insertCourseForm">
   <div class="container"> 
@@ -169,6 +168,7 @@
         <li>{{title}}</li>
         <li>{{description}}</li>
         <li>{{author}}</li>
+        <li>{{main_question}}</li>
         <ul>
           {{#each links}}
           <li>{{id}}</li>

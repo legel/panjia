@@ -46,7 +46,9 @@ Template.__define__("courseItem", (function() {
     "class": "course-content"
   }, "\n          ", HTML.H3(function() {
     return Spacebars.mustache(self.lookup("title"));
-  }), HTML.Raw("\n          <h4>Main Question?</h4>\n           <!-- need helpers to grab Main Question from course -->\n          "), HTML.P(function() {
+  }), "\n          ", HTML.H4(function() {
+    return Spacebars.mustache(self.lookup("main_question"));
+  }), "\n          ", HTML.P(function() {
     return Spacebars.mustache(self.lookup("description"));
   }), "\n      "), "\n      ", HTML.DIV({
     "class": "author-content"
@@ -152,6 +154,8 @@ Template.__define__("easysearch", (function() {
         return Spacebars.mustache(self.lookup("title"));
       }), "\n      ", HTML.LI(HTML.SPAN("Description : "), "  ", function() {
         return Spacebars.mustache(self.lookup("description"));
+      }), "\n      ", HTML.LI(HTML.SPAN("Question : "), "  ", function() {
+        return Spacebars.mustache(self.lookup("main_question"));
       }), "\n      "), "\n      \n      ", HTML.Comment(" {{> courseItem}} "), "\n      " ];
     }));
   })), "\n\n    "), HTML.Raw('\n      <!-- {{#ifEsHasNoResults index="courses"}} -->\n      <!-- <div class="no-results">No results found!</div> -->\n      <!-- {{/ifEsHasNoResults}} -->\n\n  '));
@@ -262,6 +266,8 @@ Template.__define__("showCourse", (function() {
       return Spacebars.mustache(self.lookup("description"));
     }), "\n        ", HTML.LI(function() {
       return Spacebars.mustache(self.lookup("author"));
+    }), "\n        ", HTML.LI(function() {
+      return Spacebars.mustache(self.lookup("main_question"));
     }), "\n        ", HTML.UL("\n          ", UI.Each(function() {
       return Spacebars.call(self.lookup("links"));
     }, UI.block(function() {
