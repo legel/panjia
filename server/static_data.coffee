@@ -5,6 +5,7 @@ if Courses.find().count() is 0
         "description": "All about blah",
         "author": "user_id",
         "creation_date": "12-12-1212",
+        "thumbnail": "images/europa.png",
         "rating": "TODO",
         "links": [{
             "id": "max_link_id+1",
