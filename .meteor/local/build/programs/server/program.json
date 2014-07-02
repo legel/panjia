@@ -369,6 +369,11 @@
       "sourceMapRoot": "packages"
     },
     {
+      "path": "packages/reveal-js.js",
+      "sourceMap": "packages/reveal-js.js.map",
+      "sourceMapRoot": "packages"
+    },
+    {
       "path": "packages/global-imports.js"
     },
     {

@@ -7,6 +7,7 @@ _ = Package.underscore._;
 AutoForm = Package.autoform.AutoForm;
 moment = Package.moment.moment;
 EasySearch = Package['easy-search'].EasySearch;
+Reveal = Package['reveal-js'].Reveal;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 Log = Package.logging.Log;

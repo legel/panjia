@@ -6,6 +6,7 @@
       "bootstrap-3": {},
       "moment": {},
       "collection2": {},
-      "easy-search": {}
+      "easy-search": {},
+      "reveal-js": {}
   }
 }

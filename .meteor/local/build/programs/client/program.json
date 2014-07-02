@@ -772,13 +772,24 @@
       "hash": "2e113a4ded97c3754681caafec2a61c08fe8940c"
     },
     {
+      "path": "packages/reveal-js.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/reveal-js.js?8f0295b91f46036eacaef4956522271ac90aebec",
+      "sourceMap": "packages/reveal-js.js.map",
+      "sourceMapUrl": "/packages/8f0295b91f46036eacaef4956522271ac90aebec.map",
+      "size": 430993,
+      "hash": "e0b31588aa8a36dbb926c7cb7cd009e6eba14ddb"
+    },
+    {
       "path": "packages/global-imports.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/packages/global-imports.js?a47398b214287498ee916109ad5781f3e562c223",
-      "size": 909,
-      "hash": "a47398b214287498ee916109ad5781f3e562c223"
+      "url": "/packages/global-imports.js?2a0c8c97a1f2f9de16c3bde23581d8a1df1d10ea",
+      "size": 947,
+      "hash": "2a0c8c97a1f2f9de16c3bde23581d8a1df1d10ea"
     },
     {
       "path": "app/client/template.main.js",
@@ -812,15 +823,15 @@
       "hash": "d9f3f3b1a2aa06c7b68f4faa93b0390140979c9d"
     },
     {
-      "path": "f825558be255235694600f4977d73fdd88c2b219.css",
+      "path": "463e07163caac1d0de6a52aed0984e2ffdeec1c9.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/f825558be255235694600f4977d73fdd88c2b219.css",
-      "sourceMap": "f825558be255235694600f4977d73fdd88c2b219.css.map",
-      "sourceMapUrl": "/f825558be255235694600f4977d73fdd88c2b219.map",
-      "size": 304565,
-      "hash": "2695032ca3ab77f81505c88d1fd3bdb2f264180b"
+      "url": "/463e07163caac1d0de6a52aed0984e2ffdeec1c9.css",
+      "sourceMap": "463e07163caac1d0de6a52aed0984e2ffdeec1c9.css.map",
+      "sourceMapUrl": "/463e07163caac1d0de6a52aed0984e2ffdeec1c9.map",
+      "size": 359324,
+      "hash": "cccda60a3924d6c1ce2de386db6e9987c042e9bd"
     },
     {
       "path": "packages/bootstrap/img/glyphicons-halflings.png",
@@ -875,6 +886,141 @@
       "url": "/packages/bootstrap-3/bootstrap-3/fonts/glyphicons-halflings-regular.woff",
       "size": 23320,
       "hash": "22037a3455914e5662fa51a596677bdb329e2c5c"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/css/theme/beige.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/css/theme/beige.css",
+      "size": 4967,
+      "hash": "300d89785cbaca77ebbc32a549626378cd61fd77"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/css/theme/blood.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/css/theme/blood.css",
+      "size": 5193,
+      "hash": "e7c88c67ed4e3326fdf565b5c33b8372c8b9ee6b"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/css/theme/default.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/css/theme/default.css",
+      "size": 4992,
+      "hash": "257ea5ea50605f57be3babe43e5d350b803278a6"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/css/theme/moon.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/css/theme/moon.css",
+      "size": 4261,
+      "hash": "3ab6bca7b2f2ba3cd17e68d59624d3bab3aef41e"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/css/theme/night.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/css/theme/night.css",
+      "size": 3796,
+      "hash": "85872b99fe3ce6dc3a9f30fd3ef94096f8944e63"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/css/theme/serif.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/css/theme/serif.css",
+      "size": 3869,
+      "hash": "bf962f5f4d142ae31782a3671e5c33c5a9757c74"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/css/theme/simple.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/css/theme/simple.css",
+      "size": 4001,
+      "hash": "8b0e6d04a3d95a092c192de7a01f43949875cc40"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/css/theme/sky.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/css/theme/sky.css",
+      "size": 4410,
+      "hash": "0a0b2257ae24f1d9b31402c86c62bbf53b67649b"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/css/theme/solarized.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/css/theme/solarized.css",
+      "size": 4262,
+      "hash": "df5b11af57bae65bb6767b694b8fa71411a3b5fd"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/lib/css/zenburn.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/lib/css/zenburn.css",
+      "size": 1748,
+      "hash": "06480b7689e25247a440bf5270d47c5786b19d98"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/lib/font/league_gothic_license",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/lib/font/league_gothic_license",
+      "size": 92,
+      "hash": "a8804fb63b708d69e204b734cc7e8db277447a0b"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/lib/font/league_gothic-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/lib/font/league_gothic-webfont.eot",
+      "size": 18485,
+      "hash": "5ff0db12302ef8941851afa74dfcf6e3616b7f95"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/lib/font/league_gothic-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/lib/font/league_gothic-webfont.svg",
+      "size": 47171,
+      "hash": "64ae93d4e6278f786646fd6188fdc66a5f1748f4"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/lib/font/league_gothic-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/lib/font/league_gothic-webfont.ttf",
+      "size": 42324,
+      "hash": "0bb3da7a2a94f155c579e68471b57b449a13a44d"
+    },
+    {
+      "path": "packages/reveal-js/reveal.js/lib/font/league_gothic-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/reveal-js/reveal.js/lib/font/league_gothic-webfont.woff",
+      "size": 21288,
+      "hash": "9bd1ab986175fdde3ffb4870ce5a00c7329b8420"
     },
     {
       "path": "app/w2ui-1.3.2.min.css",

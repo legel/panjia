@@ -7,7 +7,8 @@
       "easy-search": {},
       "bootstrap-3": {},
       "moment": {},
-      "collection2": {}
+      "collection2": {},
+      "reveal-js": {}
     },
     "packages": {
       "iron-router": {
@@ -39,6 +40,11 @@
         "git": "https://github.com/aldeed/meteor-collection2.git",
         "tag": "v0.4.2",
         "commit": "4ff4b707bec8be434919730bf101325adb215444"
+      },
+      "reveal-js": {
+        "git": "https://github.com/neo-technologies/meteor-reveal-js.git",
+        "tag": "v2.6.2",
+        "commit": "66ca194e49e3c48fe7d4a62ac89c7ed0d6e0814a"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
