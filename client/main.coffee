@@ -8,7 +8,7 @@ Template.courseList.helpers courses: -> Courses.find()
 
 EasySearch.createSearchIndex "courses",
   collection: Courses
-  field: ["title", "description"]
+  field: ["title", "description", "main_question"]
   limit: 100
 
 #EasySearch.search "courses", "blah", (error, data) -> console.log data
