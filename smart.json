@@ -8,6 +8,9 @@
       "collection2": {},
       "easy-search": {},
       "reveal-js": {},
-      "browser-detection": {}
+      "browser-detection": {},
+      "accounts-base": {},
+      "accounts-ui": {},
+      "accounts-password": {}
   }
 }

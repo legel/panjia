@@ -1,5 +1,5 @@
 Meteor.startup ->
-        Reveal.initialize()
+        Reveal.initialize(center: false)
 
 Meteor.subscribe "Courses"
 
