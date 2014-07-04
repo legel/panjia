@@ -1,30 +1,30 @@
 <template name="question_list">
-
-<div style="margin-bottom: 8px; -moz-border-radius: 8px; vertical-align:middle; border-radius: 8px; background-color:#7BBEE3; width:850px; height:37px; display:inline-block;">
-<table><tr>
-<td width="2000px">
-<p style="display:block; color:#FFFFFF; font-size:16px; margin-left:15px; line-height:37px;"><strong>{{title}}</strong></p>
-</td>
-{{#if typeIs "mc"}}
-<td width="9%">
-<img src="/images/lines.png" style="display:block; line-height:37px;">
-</td>
-<td width="2%">
-<img src="/images/checkmark.png" style="display:block; line-height:37px;">
-</td>
-<td width="0%" style="padding-right:15px;">
-<img src="/images/correct.png" style="display:block; line-height:37px;">
-</td>
-{{/if}}
-{{#if typeIs "essay"}}
-<td width="10%">
-<img src="/images/essay.png" style="display:block; line-height:37px;">
-</td>
-<td width="10%">
-<p style="display:block; color:#FFFFFF; font-size:15px; line-height:37px;"><strong>{{n_answers}}</strong> answers</p>
-</td>
-{{/if}}
-</tr></table>
-</div> 
-
+  <div style="margin-bottom: 8px; -moz-border-radius: 8px; vertical-align:middle; border-radius: 8px; background-color:#7BBEE3; width:850px; height:37px; display:inline-block;">
+    <table>
+      <tr>
+	<td width="2000px">
+	  <p style="display:block; color:#FFFFFF; font-size:16px; margin-left:15px; line-height:37px;"><strong>{{title}}</strong></p>
+	</td>
+	{{#if typeIs "mc"}}
+	<td width="9%">
+	  <img src="/images/lines.png" style="display:block; line-height:37px;">
+	</td>
+	<td width="2%">
+	  <img src="/images/checkmark.png" style="display:block; line-height:37px;">
+	</td>
+	<td width="0%" style="padding-right:15px;">
+	  <img src="/images/correct.png" style="display:block; line-height:37px;">
+	</td>
+	{{/if}}
+	{{#if typeIs "essay"}}
+	<td width="10%">
+	  <img src="/images/essay.png" style="display:block; line-height:37px;">
+	</td>
+	<td width="10%">
+	  <p style="display:block; color:#FFFFFF; font-size:15px; line-height:37px;"><strong>{{n_answers}}</strong> answers</p>
+	</td>
+	{{/if}}
+      </tr>
+    </table>
+  </div> 
 </template>
