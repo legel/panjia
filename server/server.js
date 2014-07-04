@@ -15,7 +15,7 @@ Meteor.methods({
 
 	setTimeout(function(){
 
-	    exec("phantomjs netlog.js " + URL + " ", {cwd: '/Users/mingus/Projects/crowdcourse/private'}, function(error, stdout, stderr) {
+	    exec("phantomjs netlog.js " + URL + " ", {cwd: '/Users/Niels/git/panjia/panjia-mvp-step0/private'}, function(error, stdout, stderr) {
 
 		console.log(stdout);
 
