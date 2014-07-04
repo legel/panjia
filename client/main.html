@@ -13,7 +13,7 @@
 
 <template name="content">
   <div id="content">
-	{{> coursesList}}
+	<!-- {{> coursesList}} -->
     <!--{{> revealDemo}}    -->	
     <!-- {{> courseList}}    -->
     <!-- {{> insertCourseForm}} -->
@@ -136,30 +136,37 @@
 </template>
 
 <template name="easysearch">
-  <div class="searchBox">
+
+  <div class="searchInput">
     {{> esInput index="courses" placeholder="What do you want to learn?" }}
 
-    {{#ifEsIsSearching index="courses"}}
-    <div class="search-loading">Loading...</div>
-    {{/ifEsIsSearching}}
+    <div class="searchBox">
+      {{#ifEsIsSearching index="courses"}}
+        <div class="search-loading">Loading...</div>
+      {{/ifEsIsSearching}}
 
-    <div class="results-wrapper">
-      {{#esEach index="courses"}}
-      <ul>
-        <li><span>Course : </span> {{title}}</li>
-        <li><span>Description : </span>  {{description}}</li>
-        <li><span>Question : </span>  {{main_question}}</li>
-      </ul>
-      
-      <!-- {{> courseItem}} -->
-      {{/esEach}}
+      <div class="results-wrapper">
+        {{#esEach index="courses"}}
+        <ul>
+          <li><span>Course : </span> {{title}}</li>
+          <li><span>Description : </span>  {{description}}</li>
+          <li><span>Question : </span>  {{main_question}}</li>
+        </ul>
+        
+        <!-- {{> courseItem}} -->
+        {{/esEach}}
+
+      </div>
+      <!-- {{#ifEsHasNoResults index="courses"}} -->
+      <!-- <div class="no-results">No results found!</div> -->
+      <!-- {{/ifEsHasNoResults}} -->
 
     </div>
-    <!-- {{#ifEsHasNoResults index="courses"}} -->
-    <!-- <div class="no-results">No results found!</div> -->
-    <!-- {{/ifEsHasNoResults}} -->
+
 
   </div>
+
+
 
 </template>
 

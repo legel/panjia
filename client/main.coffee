@@ -4,12 +4,11 @@ Meteor.startup ->
 Meteor.subscribe "Courses"
 
 Template.insertCourseForm.helpers courses: -> Courses.find()
-Template.courseList.helpers courses: -> Courses.find()
 
 EasySearch.createSearchIndex "courses",
   collection: Courses
   field: ["title", "description", "main_question"]
-  limit: 100
+  limit: 10
 
 Template._loginButtonsLoggedInDropdown.events "click #login-buttons-edit-profile": (event) ->
   event.stopPropagation()
@@ -18,4 +17,4 @@ Template._loginButtonsLoggedInDropdown.events "click #login-buttons-edit-profile
   Router.go "profileEdit"
   return
 
-#EasySearch.search "courses", "blah", (error, data) -> console.log data
+EasySearch.search "courses", "solar", (error, data) -> console.log data
