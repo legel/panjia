@@ -1,16 +1,13 @@
 {
   "packages": {
-      "iron-router": {},
-      "autoform": {},
-      "easy-search": {},
-      "bootstrap-3": {},
-      "moment": {},
-      "collection2": {},
-      "easy-search": {},
-      "reveal-js": {},
-      "browser-detection": {},
-      "accounts-base": {},
-      "accounts-ui": {},
-      "accounts-password": {}
+    "iron-router": {},
+    "autoform": {},
+    "easy-search": {},
+    "bootstrap-3": {},
+    "moment": {},
+    "collection2": {},
+    "reveal-js": {},
+    "browser-detection": {},
+    "accounts-ui-bootstrap-3": {}
   }
 }

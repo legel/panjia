@@ -5,10 +5,7 @@
 
 standard-app-packages
 coffeescript
-accounts-base
-accounts-ui
 accounts-password
-bootstrap
 email
 jquery
 spiderable
@@ -20,3 +17,4 @@ collection2
 easy-search
 bootstrap-3
 reveal-js
+accounts-ui-bootstrap-3
