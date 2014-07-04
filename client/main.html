@@ -8,12 +8,12 @@
 
 <template name="body">
   {{> toolbar}}
-  {{> content}}
+  <!-- {{> content}} -->
 </template>
 
 <template name="content">
   <div id="content">
-    {{> revealDemo}}
+    <!-- {{> revealDemo}} -->
     <!-- {{> courseList}}    -->
     <!-- {{> insertCourseForm}} -->
   </div>
@@ -105,7 +105,11 @@
 </template>
 
 <template name="profilemeteorauth">
-  <div id="profilemeteorauth">{{> loginButtons}}</div>
+  <div id="profilemeteorauth">
+    <ul class="navbar-right">
+        {{> loginButtons }}
+    </ul>
+  </div>
 </template>
 
 <template name="profilename">
@@ -135,9 +139,9 @@
     <div class="results-wrapper">
       {{#esEach index="courses"}}
       <ul>
-	<li><span>Course : </span> {{title}}</li>
-	<li><span>Description : </span>  {{description}}</li>
-	<li><span>Question : </span>  {{main_question}}</li>
+        <li><span>Course : </span> {{title}}</li>
+        <li><span>Description : </span>  {{description}}</li>
+        <li><span>Question : </span>  {{main_question}}</li>
       </ul>
       
       <!-- {{> courseItem}} -->
