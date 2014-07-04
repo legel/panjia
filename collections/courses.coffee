@@ -9,6 +9,10 @@
       type: String
       label: "Description"
       max: 500
+    main_question:
+      type: String
+      label: "Main Question"
+      max: 200
     author:
       type: String
       label: "Author Name"

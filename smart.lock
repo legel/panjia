@@ -8,7 +8,9 @@
       "bootstrap-3": {},
       "moment": {},
       "collection2": {},
-      "reveal-js": {}
+      "reveal-js": {},
+      "browser-detection": {},
+      "accounts-ui-bootstrap-3": {}
     },
     "packages": {
       "iron-router": {
@@ -45,6 +47,16 @@
         "git": "https://github.com/neo-technologies/meteor-reveal-js.git",
         "tag": "v2.6.2",
         "commit": "66ca194e49e3c48fe7d4a62ac89c7ed0d6e0814a"
+      },
+      "browser-detection": {
+        "git": "https://github.com/awatson1978/browser-detection.git",
+        "tag": "v1.0.4",
+        "commit": "127fc74221705bdbe40f0fd77f491bb1760aed95"
+      },
+      "accounts-ui-bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
+        "tag": "v0.3.2",
+        "commit": "8686c0d3107cf48c72a5500b027f081c7e79dbbc"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

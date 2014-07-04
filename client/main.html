@@ -79,8 +79,9 @@
     {{> questions}}
     {{> answers}}
     {{> easysearch}}
-    {{> profilename}}
-    {{> profile}}
+    <!-- {{> profilename}} -->
+    <!-- {{> profile}} -->
+    {{> profilemeteorauth}}
     {{> newcourse}}
     {{> connect}}
   </div>
@@ -105,8 +106,20 @@
   </div>
 </template>
 
+<template name="profilemeteorauth">
+  <div id="profilemeteorauth">
+    <ul class="nav navbar-right">
+        {{> loginButtons }}
+    </ul>
+  </div>
+</template>
+
+<template name="_loginButtonsAdditionalLoggedInDropdownActions">
+    <button class="btn btn-default btn-block" id="login-buttons-edit-profile">Edit profile</button>
+</template>
+
 <template name="profilename">
-  <div id="profilename">Niels</div>
+  <div id="profilename">{{> loginButtons}}</div>
 </template>
 
 <template name="profile">
@@ -132,9 +145,9 @@
     <div class="results-wrapper">
       {{#esEach index="courses"}}
       <ul>
-	<li><span>Course : </span> {{title}}</li>
-	<li><span>Description : </span>  {{description}}</li>
-	<li><span>Question : </span>  {{main_question}}</li>
+        <li><span>Course : </span> {{title}}</li>
+        <li><span>Description : </span>  {{description}}</li>
+        <li><span>Question : </span>  {{main_question}}</li>
       </ul>
       
       <!-- {{> courseItem}} -->
@@ -215,6 +228,5 @@
   </div>
 </template>
 
-<!-- Course Viewer Stuff -->
 
 

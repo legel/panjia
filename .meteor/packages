@@ -5,17 +5,7 @@
 
 standard-app-packages
 coffeescript
-accounts-base
-accounts-facebook
-accounts-github
-accounts-google
-accounts-meetup
-accounts-meteor-developer
-accounts-ui
 accounts-password
-accounts-weibo
-accounts-twitter
-bootstrap
 email
 jquery
 spiderable
@@ -27,3 +17,4 @@ collection2
 easy-search
 bootstrap-3
 reveal-js
+accounts-ui-bootstrap-3
