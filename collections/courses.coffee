@@ -14,6 +14,7 @@
       label: "Author Name"
       max: 100
     thumbnail:
+      optional: true
       type: String
       label: "Thumb Url"
       max: 200
@@ -21,6 +22,9 @@
       type: [Object]
       minCount: 1
     "links.$.id":
+      type: String
+    "links.$.image":
+      optional:true
       type: String
     "links.$.url":
       type: String
@@ -31,6 +35,12 @@
     "links.$.link_questions":
       type: [Object]
     "links.$.link_questions.$.title":
+      type: String
+    "links.$.link_questions.$.type":
+      optional:true
+      type: String
+    "links.$.link_questions.$.n_answers":
+      optional:true 
       type: String
     "links.$.link_questions.$.answers":
       type: [Object]
