@@ -11,4 +11,11 @@ EasySearch.createSearchIndex "courses",
   field: ["title", "description", "main_question"]
   limit: 100
 
+Template._loginButtonsLoggedInDropdown.events "click #login-buttons-edit-profile": (event) ->
+  event.stopPropagation()
+  Template._loginButtons.toggleDropdown()
+  #TODO: make profileEdit route
+  Router.go "profileEdit"
+  return
+
 #EasySearch.search "courses", "blah", (error, data) -> console.log data
