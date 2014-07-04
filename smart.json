@@ -5,6 +5,7 @@
     "easy-search": {},
     "bootstrap-3": {},
     "moment": {},
+    "phantomjs":{},
     "collection2": {},
     "reveal-js": {},
     "browser-detection": {},
