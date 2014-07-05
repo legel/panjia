@@ -1,0 +1,218 @@
+.grid-block, .main, .post, .comments li, .comment-form {
+    background: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+body {
+    background: #eee;
+    color: #666666;
+}
+.navbar {
+    margin-bottom: 10px;
+}
+.navbar .navbar-inner {
+    border-radius: 0px 0px 3px 3px;
+}
+#spinner { height: 300px }
+.post {
+    *zoom: 1;
+    font-family: 'Raleway' sans-serif;
+    -webkit-transition: all 300ms 0ms;
+    -webkit-transition-delay: ease-in;
+    -moz-transition: all 300ms 0ms ease-in;
+    -o-transition: all 300ms 0ms ease-in;
+    transition: all 300ms 0ms ease-in;
+    position: relative;
+    opacity: 1;
+}
+
+.post .post-content {
+  max-width: 100%;
+}
+
+/* Course Overview Styles */
+.course-overview table {
+    padding: 5px;
+    border-collapse: collapse
+}
+
+.course-overview .thumbnail {
+    width: 10%;
+    vertical-align: top;
+    text-align: left;
+    border: none;
+}
+
+  .course-overview .thumbnail div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-position: center center;
+    background-size: cover;
+  }
+
+.course-overview .title-description {
+    width: 2000px;
+    border-right: 1px solid #eeeeee;
+    font-family: 'Raleway' sans-serif;
+}
+
+  .course-overview .title-description ul {
+    list-style: none;
+    padding-right: 20px;
+  }
+
+  .course-overview .title-description li {
+    margin-bottom: 15px ;
+  }
+
+  .course-overview .title-description .course-title {
+    color: #6dbae3;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .course-overview .title-description .course-main-question {
+    font-weight: bold;
+  }
+
+.course-overview .course-metadata {
+  width: 10%;
+}
+
+  .course-overview .course-metadata div {
+    font-family: 'Raleway' sans-serif;
+    width: 250px; 
+  }
+
+  .course-overview .course-metadata ul {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .course-overview .course-metadata li {
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+  }
+
+  .course-overview .course-metadata .author-thumbnail {
+    vertical-align: top;
+    text-align: left;
+    padding: 0 10px 0 0;
+  }
+
+  .course-overview .course-metadata img {
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin-top: 15px;
+  }
+
+  .course-overview .course-metadata .author-name {
+    vertical-align: center;
+    text-align: center;
+  }
+
+  .course-overview .course-metadata .course-duration {
+    font-style: italic;
+  }
+
+  .course-overview .course-metadata span {
+    font-weight: bold;
+  }
+
+
+/* Course Specifics Styles */
+.course-specifics {
+  border-collapse: collapse;
+  background-color: #eeeeee;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+}
+
+  .course-specifics .questions-collapsed {
+    padding-top: 10px;
+    display: none;
+  }
+
+  .course-specifics .course-questions {
+    width: 50%;
+    vertical-align: top;
+    text-align: left;
+  }
+
+
+
+
+
+.post:before, .post:after {
+    content: "";
+    display: table;
+}
+.post:after { clear: both }
+.post.invisible { opacity: 0 }
+.post .upvote {
+    display: block;
+    margin: 3px 3px 0 0;
+    float: left;
+}
+.post .post-content { float: left }
+.post .post-content h3 {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+.post .post-content h3 a {
+    display: inline-block;
+    margin-right: 3px;
+}
+.post .post-content h3 span {
+    font-weight: normal;
+    font-size: 14px;
+    display: inline-block;
+    color: #aaaaaa;
+}
+
+.post .discuss {
+    display: block;
+    float: right;
+    margin-top: 3px;
+}
+.comments {
+    list-style-type: none;
+    margin: 0;
+}
+.comments li h4 {
+    font-size: 16px;
+    margin: 0;
+}
+.comments li h4 .date {
+    font-size: 12px;
+    font-weight: normal;
+}
+.comments li h4 a { font-size: 12px }
+.comments li p:last-child { margin-bottom: 0 }
+.dropdown-menu span {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    line-height: 20px;
+    color: #bbb;
+    white-space: nowrap;
+}
+.load-more {
+    display: block;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+.load-more:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.1);
+}

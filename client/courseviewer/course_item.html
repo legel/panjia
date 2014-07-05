@@ -1,121 +1,107 @@
 <template name="courseItem">
-  <div class="post" style="font-family:Raleway;">
+  <div class="post">
     <div class="post-content">
-      <table cellpadding="5" style="border-collapse:collapse;">
+      <table class="course-overview">
 
-	<tr>
+				<tr>
+				  <td class="thumbnail">
+				    <a href="#">
+				      <div id={{thumb_id}} class="refresh" style="background-image:url('{{img}}');">
+				      </div>
+				    </a>
+				  </td>
 
-	  <td align="center" width="10%" style="vertical-align: top; text-align:left; ">
+				  <td class="title-description">
+				    <div>
+				      <ul>
+								<li class="course-title">{{title}}</li>
+								<li class="course-main-question">{{main_question}}</li>
+								<li class="course-description">{{description}}</li>
+				      </ul>
+				    </div>
+				  </td> 
 
-	    <a href="#">
-	      <div id={{thumb_id}} class="refresh" style="background-image:url('{{img}}'); width:150px; height:150px; display:inline-block; background-position: center center; background-size: cover;">
-	      </div>
-	    </a>
-
-	  </td>
-
-	  <td width="2000" style="border-right: 1px solid #EEEEEE;">
-	    <div style="font-family:Raleway">
-	      <ul style="list-style-type:none;">
-		<li style="margin-bottom: 15px;">
-		  <p style="color: #6DBAE3; font-size:20px;"><strong>{{title}}</strong></p>
-		</li>
-		<li style="margin-bottom: 15px;"><p><strong>{{main_question}}</strong></p></li><li><p>{{description}}</p>
-		</li>
-	      </ul>
-	    </div>
-	  </td> 
-
-	  <td width="10%">
-
-	    <div style="font-family:Raleway; width:250px;">
-	      <ul style="list-style-type:none; display: inline-block;">
-		<li style="margin-bottom: 8px; display: block; text-align:left;">
-		  <table><tr>
-		      <td style="vertical-align: top; text-align:left; padding: 0 10px 0 0;">
-			<img style="height:75px; width:75px; float:left; margin-top:15px;" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/t1.0-1/c46.0.160.160/p160x160/10384603_10154316098695722_214143330612407693_n.jpg">
-		      </td>
-
-		      <td style="vertical-align: center; text-align:center">
-			<h3>{{author}}</h3>
-		      </td>
-
-		    </tr>
-		  </table>
-
-		</li>
-
-		<li>
-		  <p> <em>duration: <strong>2 hours</strong> </em></p>
-		</li>
-
-		<li>
-		  <p><strong>14</strong> learners</p>
-		</li>
-
-		<li>
-		  <p><strong>20</strong> likes</p>
-		</li>
-
-	      </ul>
-	    </div>
-	  </td>
-
-
-
-	</tr>
-
+				  <td class="course-metadata">
+				    <div>
+				      <ul>
+								<li>
+								  <table>
+								 		<tr>
+								      <td class="author-thumbnail">
+												<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/t1.0-1/c46.0.160.160/p160x160/10384603_10154316098695722_214143330612407693_n.jpg">
+								      </td>
+								      <td class="author-name">
+												<h3>{{author}}</h3>
+								      </td>
+								    </tr>
+								  </table>
+								</li>
+								<li>
+								  <p class="course-duration">
+								  	<span>2 hours</span> to complete
+								  </p>
+								</li>
+								<li>
+								  <p><span>14</span> learners</p>
+								</li>
+								<li>
+								  <p><span>20</span> likes</p>
+								</li>
+				      </ul>
+				    </div>
+				  </td>
+				</tr>
       </table>
 
-      <table style="border-collapse:collapse;">
-	<tr id={{row_id}} style="display:none; padding-top:10px;">
+      <table class="course-specifics">
+				<tr id={{row_id}} class="questions-collapsed">
+				  <td class="course-questions">
+				    {{#each question_item}}
+			 	    {{#each link_questions}}
+				    {{> question_list}}
+				    {{/each}}
+				    {{/each}}
+				  </td>
 
-	  <td width="70%" style="vertical-align: top; text-align:left;">
+				  <td width="20%" style="vertical-align: top; text-align:left;">
 
-	    {{#each question_item}}
- 	    {{#each link_questions}}
-	    {{> question_list}}
-	    {{/each}}
-	    {{/each}}
-	  </td>
+				    <ul style="list-style-type:none;">
+				      <li>
+								<h4 style="border-bottom: 2px solid #EEEEEE; padding-bottom:10px;"><strong>Resources</strong></h4>
+				      </li>
+				    </ul>
 
-	  <td width="30%" style="vertical-align: top; text-align:left;">
+				    <ul style="list-style-type:none; height:110px; overflow-y:scroll;">
 
-	    <ul style="list-style-type:none;">
-	      <li>
-		<h4 style="border-bottom: 2px solid #EEEEEE; padding-bottom:10px;"><strong>Resources</strong></h4>
-	      </li>
-	    </ul>
+				      {{#each question_item}}
+				      <li style="border-bottom: 2px solid #EEEEEE; padding-bottom:5px;">
 
-	    <ul style="list-style-type:none; height:110px; overflow-y:scroll; width:700px;">
+								<table>
+									<tr>
 
-	      {{#each question_item}}
-	      <li style="border-bottom: 2px solid #EEEEEE; padding-bottom:5px;">
+								    <td width="90%" align=left; style="vertical-align: top; text-align:left;">
+								      <p style="font-size:16px;">{{title}}</p>
+								      <a href={{url}}><em>{{domain}}</em></a>
+								      <!-- <p>{{description}}</p> -->
+								    </td>
 
-		<table><tr>
+								    <td width="10%" style="padding-left:50px;">
+								      <div id={{id}} style="background-image:url('{{res_img}}'); width:40px; height:40px; display:inline-block; background-position: center center; background-size: cover; margin-right:35px;">
+								      </div>
+								    </td>
 
-		    <td width="90%" align=left; style="vertical-align: top; text-align:left;">
-		      <p style="font-size:16px;"><strong>{{title}}</strong></p>
-		      <a href={{url}}><em>{{domain}}</em></a>
-		      <p>{{description}}</p>
-		    </td>
+									</tr>
+								</table>
+				      </li>	
+				      
+				      {{/each}}
 
-		    <td width="10%" style="padding-left:100px;">
-		      <div id={{id}} style="background-image:url('{{res_img}}'); width:110px; height:110px; display:inline-block; background-position: center center; background-size: cover; margin-right:35px;">
-		      </div>
-		    </td>
+				    </ul>
+				  </td>
 
-		</tr></table>
-	      </li>	
-	      
-	      {{/each}}
-
-	    </ul>
-	  </td>
-
-	</tr>
+				</tr>
       </table>
-      <div class="showhide" style="width:100%; display: inline-block; background-color: #EEEEEE; height:25px; margin-top:0px;">
+      <div class="showhide" style="width:100%; display: inline-block; background-color: #EEEEEE; height:25px; margin-top:0px; border-bottom-left-radius:6px; border-bottom-right-radius:6px">
 	<img id={{downup_id}} style="margin-top:6px; display:block; margin-right:auto; margin-left:auto;" src="/images/downbutton.png">
       </div>
 

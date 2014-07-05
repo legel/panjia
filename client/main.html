@@ -13,9 +13,8 @@
 
 <template name="content">
   <div id="content">
-	<!-- {{> coursesList}} -->
-    <!--{{> revealDemo}}    -->	
-    <!-- {{> courseList}}    -->
+    {{> coursesList}}
+    <!-- {{> revealDemo}} -->
     <!-- {{> insertCourseForm}} -->
   </div>
 </template>
@@ -152,18 +151,13 @@
           <li><span>Description : </span>  {{description}}</li>
           <li><span>Question : </span>  {{main_question}}</li>
         </ul>
-        
         <!-- {{> courseItem}} -->
         {{/esEach}}
-
       </div>
       <!-- {{#ifEsHasNoResults index="courses"}} -->
       <!-- <div class="no-results">No results found!</div> -->
       <!-- {{/ifEsHasNoResults}} -->
-
     </div>
-
-
   </div>
 
 
