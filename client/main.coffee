@@ -1,5 +1,12 @@
 Meteor.startup ->
-        Reveal.initialize(center: false)
+        Reveal.initialize
+                center: false
+                transition: "none"
+                transitionSpeed: "fast"
+                keyboard: true
+                touch: true
+                mouseWheel: true
+                controls: true
 
 Meteor.subscribe "Courses"
 

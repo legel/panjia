@@ -291,12 +291,28 @@ iframe, div.slides {
     max-width: 100% !important;
     max-height: 1000px !important;
     min-width: 100% !important;
-    min-height: 1000px !important;
-    position: fixed !important;
-    position: absolute !important;
+    min-height: 1000px;
+    position: absolute;
     top: 270px !important;
-    bottom: 0px !important;
-    right: 0px !important;
+    bottom: 0px;
+    right: 0px;
     left: 25% !important;
 }
 
+#leftarrow {
+    float:left;
+    padding-left: 15%;
+    font-size: 20px;
+    margin-top: -4px;
+    color: white;
+    cursor: pointer;
+}
+
+#rightarrow {
+    float:right;
+    padding-right: 15%;
+    font-size: 20px;
+    margin-top: -4px;
+    color:white;
+    cursor:pointer;
+}
