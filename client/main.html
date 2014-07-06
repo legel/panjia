@@ -13,64 +13,32 @@
 
 <template name="content">
   <div id="content">
-    {{> coursesList}}
-    <!-- {{> revealDemo}} -->
+    <!-- {{> coursesList}} -->
+    {{> revealDemo}}
     <!-- {{> insertCourseForm}} -->
   </div>
 </template>
 
 <template name="revealDemo">
-  <div class="reveal">
+  <div id="iframe">
+    <div class="reveal">
       <div class="slides">
         <section>
-	    <iframe src="http://beta.slashdot.org/" width="100%" height="100%"></iframe>
+	  <iframe src="http://beta.slashdot.org/" width="100%" height="100%"></iframe>
         </section>
         <section>
-	    <iframe src="http://fark.com" width="100%" height="100%"></iframe>
+	  <iframe src="http://fark.com" width="100%" height="100%"></iframe>
         </section>
         <section>
-	    <iframe src="http://arstechnica.com" width="100%" height="100%"></iframe>
+	  <iframe src="http://arstechnica.com" width="100%" height="100%"></iframe>
         </section>
         <section>
-	    <iframe src="http://archive.org" width="100%" height="100%"></iframe>
+	  <iframe src="http://archive.org" width="100%" height="100%"></iframe>
         </section>
+      </div>
     </div>
   </div>
 </template>
-
-<!-- This is old course list code
-<template name="courseList">
-  <div class="courses">
-    {{#each courses}}
-    {{> courseItem}}
-    {{/each}}
-  </div>
-</template>
-
-<template name="courseItem">
-  <div class="course">
-    <img class="course-thumbnail" src={{thumbnail}}>
-    <div class="course-content">
-      <h3>{{title}}</h3>
-      <h4>{{main_question}}</h4>
-      <p>{{description}}</p>
-    </div>
-    <div class="author-content">
-      <img src='images/lance.jpg' style='height:40px'>
-      <p class="author-name">
-        {{author}}
-        <br>
-        <span>30</span> minutes
-        <br>
-        <span>12</span> learners
-        <br>
-        <span>2</span> likes
-      </p>
-      
-    </div>
-  </div>
-</template>
--->
 
 <template name="toolbar">
   <div class="toolbar">
@@ -159,9 +127,6 @@
       <!-- {{/ifEsHasNoResults}} -->
     </div>
   </div>
-
-
-
 </template>
 
 <template name="insertCourseForm">
