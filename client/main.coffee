@@ -7,6 +7,11 @@ Meteor.startup ->
                 touch: true
                 mouseWheel: true
                 controls: true
+                width: "100%"
+                height: "100%"
+                transform: "none"
+                minScale: "1.0"
+                maxScale: "1.0"
 
 Meteor.subscribe "Courses"
 
