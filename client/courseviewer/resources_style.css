@@ -1,0 +1,26 @@
+.resource-element {
+  border-bottom: 2px solid #EEEEEE; 
+  padding-bottom:5px;
+}
+
+.resource-text {
+  vertical-align: top; 
+  text-align:left;
+}
+
+.resource-title {
+  font-size:16px;
+}
+
+.resource-thumbnail {
+  padding-left:50px;
+}
+
+.resource-image {
+  width:40px; 
+  height:40px; 
+  display:inline-block; 
+  background-position: center center; 
+  background-size: cover; 
+  margin-right:35px;
+}

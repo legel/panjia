@@ -65,35 +65,16 @@
 
 				  <td class="course-resources">
 
-				    <ul style="list-style-type:none;">
+				    <ul class="resources-list">
 				      <li>
-								<h4 style="border-bottom: 2px solid #EEEEEE; padding-bottom:10px;"><strong>Resources</strong></h4>
+								<h4 class="resources-header"><strong>Resources</strong></h4>
 				      </li>
 				    </ul>
 
-				    <ul style="list-style-type:none; height:110px; overflow-y:scroll;">
+				    <ul class="scrollable-list">
 
 				      {{#each question_item}}
-				      <li style="border-bottom: 2px solid #EEEEEE; padding-bottom:5px;">
-
-								<table>
-									<tr>
-
-								    <td width="90%" align=left; style="vertical-align: top; text-align:left;">
-								      <p style="font-size:16px;">{{title}}</p>
-								      <a href={{url}}><em>{{domain}}</em></a>
-								      <!-- <p>{{description}}</p> -->
-								    </td>
-
-								    <td width="10%" style="padding-left:50px;">
-								      <div id={{id}} style="background-image:url('{{res_img}}'); width:40px; height:40px; display:inline-block; background-position: center center; background-size: cover; margin-right:35px;">
-								      </div>
-								    </td>
-
-									</tr>
-								</table>
-				      </li>	
-				      
+				      {{> resource_item}}
 				      {{/each}}
 
 				    </ul>

@@ -18,7 +18,7 @@ body {
 #spinner { height: 300px }
 .post {
     *zoom: 1;
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway';
     -webkit-transition: all 300ms 0ms;
     -webkit-transition-delay: ease-in;
     -moz-transition: all 300ms 0ms ease-in;
@@ -31,6 +31,7 @@ body {
 
 .post .post-content {
   max-width: 100%;
+  font-family: 'Raleway' sans-serif;
 }
 
 /* Course Overview Styles */
@@ -127,6 +128,21 @@ body {
     font-weight: bold;
   }
 
+.resources-list {
+  list-style-type:none;
+}
+
+.resources-header {
+  border-bottom: 2px solid #EEEEEE; 
+  padding-bottom:10px;
+}
+
+.scrollable-list {
+  list-style-type:none; 
+  height:110px; 
+  overflow-y:scroll; 
+  width:100%;
+}
 
 /* Course Specifics Styles */
 .course-specifics {
