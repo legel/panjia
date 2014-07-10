@@ -8,19 +8,21 @@
 
       	{{#if typeIs "mc"}}
       	<td class="question-bar-col1">
-      	  <img src="/images/lines.png">
+      	  <img class="question_img" src="/images/lines.png">
       	</td>
       	<td class="question-bar-col2">
-      	  <img src="/images/checkmark.png">
-          <img src="/images/correct.png">
+      	  <img class="question_img" src="/images/checkmark.png">
       	</td>
+	<td class="question-bar-col2">
+          <img class="question_img" src="/images/correct.png">
+	</td>
       	{{/if}}
       	{{#if typeIs "essay"}}
       	<td class="question-bar-col1">
-      	  <img src="/images/essay.png">
+      	  <img class="question_img" src="/images/essay.png">
       	</td>
       	<td class="question-bar-col2">
-      	  <p><strong>{{n_answers}}</strong> answers</p>
+      	  <p class="question_img" ><strong>{{n_answers}}</strong> answers</p>
       	</td>
       	{{/if}}
       </tr>

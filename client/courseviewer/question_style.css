@@ -20,7 +20,7 @@
 }
 
 .question-list .question-text {
-    width: 550px;
+    width: 100%;
     display: block;
     color: #ffffff;
     font-size: 16px;
@@ -29,6 +29,7 @@
 }
 
 .question-list .question-text p {
+    width:90%;
     margin: 0px;
 }
 
@@ -38,17 +39,26 @@
 }
 
 .question-list .question-bar-col1 {
+    line-height:50px;
     vertical-align: center;
-    width: 50px;
+    padding-right:10px;
+    width: 5%;
 }
 
 .question-list .question-bar-col2 {
+    line-height:50px;
     vertical-align: center;
+    padding-right:10px;
     text-align: center;
-    width: 125px;
+    width: 5%;
 }
 
 .question-list .question-bar-col2 p {
     margin: 0px;
     color: #ffffff;
+}
+
+.question_img {
+  display:block;
+  line-height:10px;
 }
