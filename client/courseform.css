@@ -1,0 +1,151 @@
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 10px 0px 0px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px #3097da;
+  padding: 3px 0px 3px 3px;
+  margin: 10px 0px 0px 0px;
+  border: 1px solid #3097da;
+}
+
+input.addbuttons {
+  background-repeat: no-repeat;  /* make the background image appear only once */
+  background-position: 5px 5px;  /* equivalent to 'top left' */
+  border: none;           /* assuming we don't want any borders */
+  cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  height:35px;
+  font-size: 14pt;
+  -webkit-font-smoothing: antialiased;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: left;
+  padding-left: 35px;
+  padding-right: 0px; 
+  margin-top: 10px;
+  vertical-align: middle;
+  line-height: 35px;
+  color: white;
+}
+
+input.submitbutton {
+  border: none;           /* assuming we don't want any borders */
+  cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  height:35px;
+  width: 75px;
+  font-size: 14pt;
+  -webkit-font-smoothing: antialiased;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 0px; 
+  margin-top: 10px;
+  vertical-align: middle;
+  line-height: 35px;
+  color: white;
+  background: #79c25a;
+  margin-top: 10px;
+}
+
+input.submitbutton:hover {
+  background: #4f7f3a;
+}
+
+input.addlinkbutton {
+  margin-left: 15px;
+  background-image: url(images/link.png);
+  background-color: #35a4ec;
+  width: 125px;
+}
+
+input.addquestionbutton {
+  margin-left: 10px;
+  background-image: url(images/question.png);
+  background-color: #35a4ec;
+  width: 165px;
+}
+
+input.addanswerbutton {
+  margin-left: 10px;
+  background-image: url(images/lines.png);
+  background-color: #b6b42b;
+  width: 165px;
+}
+
+.leadbutton {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  border: none;
+  font-size: 13pt;
+  width:35px;height:35px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 35px;
+  color: white;
+  font-size: 14pt;
+}
+
+.linknumber {
+  background-color: #434343;
+  font-family: Book Antiqua;
+}
+
+.answerletter {
+  background-color: #438fc7;
+}
+
+.column-linknumber{
+  margin-left: 15px;
+  margin-top: 10px;
+  float: left;
+}
+
+.column-questionsymbol{
+  margin-left: 30px;
+  margin-top: 10px;
+  float: left;
+  font-family: 'Raleway';
+  font-size: 15pt;
+}
+
+.column-answerletter{
+  margin-left: 60px;
+  margin-top: 10px;
+  float: left;
+  font-family: 'Raleway';
+  font-size: 15pt;
+}
+
+.questionsymbol {
+  background-color: #b6b42b;
+}
+
+.column-link{
+  float: left;
+}
+
+
+.welcome {
+    color: #4c97c9;
+    text-align: center;
+    font-size: 24pt;
+    font-family:'Raleway', sans-serif;   
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
