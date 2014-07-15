@@ -1,8 +1,8 @@
 Meteor.startup ->
         Reveal.initialize
                 center: false
-                transition: "none"
-                transitionSpeed: "fast"
+                transition: "concave"
+                transitionSpeed: "slow"
                 keyboard: true
                 touch: true
                 mouseWheel: true
