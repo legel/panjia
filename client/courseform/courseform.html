@@ -1,5 +1,5 @@
 <template name="courseSubmit">
-  <div class="container" style="margin-top:50px"> 
+  <div id='course-form' class="container" style="margin-top:50px"> 
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6 welcome">SHARE YOUR KNOWLEDGE</div>
@@ -23,7 +23,7 @@
 
 <template name="addlink">
   <div id="link-container">
-    <div>
+    <div id="course-form">
       <div class="row">
         <div class="column-linknumber"><div class="leadbutton linknumber">1</div></div>
         <input name="link1" type="text" style="height: 35px; width: calc(100% - 250px); float: left; margin-left: 10px" value="" placeholder="Link"/> 
@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div id="course-form" class="row">
      <input type="button" class="addbuttons addlinkbutton addlink" value="Add Link"/>
   </div>
   
