@@ -2,7 +2,7 @@
   <div class="post">
     <div class="post-content">
       <table class="course-overview">
-      
+
 		<tr>
 		  <td class="thumbnail">
 		    <a href="#">
@@ -14,7 +14,11 @@
 		  <td class="title-description">
 		    <div>
 		      <ul>
-				<li class="course-title">{{title}}</li>
+				<li class="course-title" >
+					<a class='to-course' href="{{pathFor 'revealDemo'}}">
+						{{title}}
+					</a>
+				</li>
 				<li class="course-main-question">{{main_question}}</li>
 				<li class="course-description">{{description}}</li>
 		      </ul>

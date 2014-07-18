@@ -12,18 +12,17 @@ Template.courseItem.events({
     'click .showhide': function(event){
 	event.preventDefault();
 	
-	if(document.getElementById("row"+this._id).style["display"]=="none"){
+	if (document.getElementById("row"+this._id).style["display"]=="none"){
 	    //alert("know it's hidden, change it");
 	    document.getElementById("row"+this._id).style["display"]='block';
 	    document.getElementById("downup"+this._id).src="/images/upbutton.png";
 	}
-	else{
+	else {
 	    //alert("know it's showing, hide it");
 	    document.getElementById("row"+this._id).style["display"]="none";
 	    document.getElementById("downup"+this._id).src="/images/downbutton.png";
-	}
-    }	
-
+	   }
+    }
 });
 
 
