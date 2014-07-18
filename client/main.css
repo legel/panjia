@@ -1,4 +1,4 @@
-@import "packages/reveal-js/reveal.js/css/theme/night.css";
+/*@import "packages/reveal-js/reveal.js/css/theme/night.css";*/
 
 body {
     margin: 0;
@@ -289,9 +289,11 @@ body {
     margin-left: 15px;
 }
 
+/*
 .slides {
     text-align: left !important;
 }
+*/
 
 iframe {
     min-width: 100% !important;
