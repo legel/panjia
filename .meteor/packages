@@ -19,3 +19,4 @@ bootstrap-3
 reveal-js
 accounts-ui-bootstrap-3
 http
+iron-router
