@@ -1,3 +1,7 @@
+#course-form {
+    margin-top:50px;
+}
+
 #course-form input[type=text], textarea {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
@@ -148,4 +152,27 @@ input.addanswerbutton {
     margin-top: 20px;
     margin-bottom: 20px;
 
+}
+
+.col-md-8 {
+    border:none;
+    font-family:'Raleway';
+    font-size: 14pt;
+}
+
+.col-md-8-input {
+    height: 35px;
+    width: 100%;
+}
+
+.col-md-8-description {
+    height: 70px;
+    width: 100%;
+}
+
+.link1-input {
+    height: 35px;
+    width: calc(100% - 250px);
+    float: left;
+    margin-left: 10px
 }

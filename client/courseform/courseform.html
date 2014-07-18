@@ -1,24 +1,24 @@
 <template name="courseSubmit">
-  <div id='course-form' class="container" style="margin-top:50px"> 
+  <div id="course-form" class="container"> 
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6 welcome">SHARE YOUR KNOWLEDGE</div>
       <div class="col-md-3"></div>
     </div>
-   
+    
     <div class="row">
       <div class="col-md-2"></div>
-      <div class="col-md-8" style="border:none; font-family:'Raleway'; font-size: 14pt">
+      <div class="col-md-8">
         <form>
-          <input name="title" type="text" style="height: 35px; width: 100%;" value="" placeholder="Title"/>
-          <input name="description" type="text" value="" style="height: 70px; width: 100%;" placeholder="Description"/>
+          <input name="title" type="text" class="col-md-8-input" value="" placeholder="Title"/>
+          <input name="description" type="text" class="col-md-8-description" value="" style="" placeholder="Description"/>
           {{> addlink}}
           <input type="submit" class="addbuttons submitbutton" value="Launch"/>
         </form>
       </div>
       <div class="col-md-2"></div>
-      </div>
     </div>
+  </div>
 </template>
 
 <template name="addlink">
@@ -26,14 +26,14 @@
     <div id="course-form">
       <div class="row">
         <div class="column-linknumber"><div class="leadbutton linknumber">1</div></div>
-        <input name="link1" type="text" style="height: 35px; width: calc(100% - 250px); float: left; margin-left: 10px" value="" placeholder="Link"/> 
+        <input name="link1" type="text" style="" class=".link1-input" value="" placeholder="Link"/> 
         <input type="button" class="addbuttons addquestionbutton addquestion" id='1' value="Add Question"/>
       </div>
     </div>
   </div>
 
   <div id="course-form" class="row">
-     <input type="button" class="addbuttons addlinkbutton addlink" value="Add Link"/>
+    <input type="button" class="addbuttons addlinkbutton addlink" value="Add Link"/>
   </div>
   
 </template>
