@@ -295,17 +295,6 @@ body {
 }
 */
 
-iframe {
-    min-width: 100% !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    min-height: 1000px;
-    max-height: 1000px !important;
-    height: 100% !important;
-    position: absolute;
-    top: 40px;
-}
-
 #leftarrow {
     float:left;
     padding-left: 15%;
