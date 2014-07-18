@@ -1,11 +1,10 @@
 {
   "packages": {
-    "iron-router": {},
     "autoform": {},
     "easy-search": {},
     "bootstrap-3": {},
     "moment": {},
-    "phantomjs":{},
+    "phantomjs": {},
     "collection2": {},
     "reveal-js": {},
     "browser-detection": {},
