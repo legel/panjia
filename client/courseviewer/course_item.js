@@ -47,7 +47,7 @@ Template.courseItem.helpers({
     },
 
     main_question: function(){
-	return this.links[0].link_questions[0].title;
+	return this.main_question;
     },
 
     thumb_id: function() {
